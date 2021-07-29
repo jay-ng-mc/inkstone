@@ -1,0 +1,27 @@
+@import '../../base.scss';
+
+@mixin button {
+    border: none;
+    font-size: $button-font-size;
+    font-family: $standard-font;
+    font-weight: $standard-font-weight;
+    letter-spacing: 2px;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    display: inline-flex;
+
+    &:disabled {
+        background-color: $disabled-bg;
+        color: $disabled-text;
+    }
+
+    .buttonIcon {
+        height: $button-font-size;
+        align-self: center;
+    }
+}

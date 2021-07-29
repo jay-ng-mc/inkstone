@@ -1,0 +1,65 @@
+@import '../../base.scss';
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+
+    .homeTopBanner{
+        background-color: $inkstone-purple;
+        font-family: $standard-font;
+        font-weight: $light-font-weight;
+        color: $pure-white;
+        padding: 8vw;
+        text-align: center;
+    
+        .header {
+            text-align: center;
+            font-size: $title-font-size;
+            padding: 20px;
+        }
+        .hr-custom {
+            border-top: 3px solid $pure-white;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            width: 5%;
+        }
+        .text {
+            text-align: center;
+            font-size: $text-font-size;
+            padding: 20px;
+        }
+    }
+    
+    .homeTeamBanner {
+        width: 90vw;
+        align-self: center;
+    }
+
+    .homePageContent {
+        font-family: $standard-font;
+        width: 60vw;
+        min-width: 300px;
+        align-self: center;
+        margin: 50px;
+
+        .header {
+            text-align: center;
+            font-size: $title-font-size;
+            font-weight: $bold-font-weight;
+            color: $inkstone-purple;
+            padding: 20px;
+        }
+        .text {
+            text-align: center;
+            font-size: $text-font-size;
+            font-weight: $standard-font-weight;
+            color: $text-purple;
+            line-height: 150%;
+            p {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

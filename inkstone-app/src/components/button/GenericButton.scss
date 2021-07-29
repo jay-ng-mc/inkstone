@@ -1,0 +1,16 @@
+@import '../../base.scss';
+@import './button.scss';
+
+.genericButton {
+    @include button;
+    background-color: $inkstone-purple;
+    color: $pure-white;
+
+    &:hover {
+        background-color: $highlight-purple
+    }
+    &:disabled {
+        background-color: $disabled-bg;
+        color: $disabled-text;
+    }
+}

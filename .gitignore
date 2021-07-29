@@ -1,3 +1,5 @@
 # git ignore patterns
 **/node_modules/
 **/package-lock.json
+inkstone-app/public/css
+inkstone-app/build

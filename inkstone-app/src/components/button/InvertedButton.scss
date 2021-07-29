@@ -1,0 +1,13 @@
+@import '../../base.scss';
+@import './button.scss';
+
+.invertedButton {
+    @include button;
+    background-color: $pure-white;
+    color: $inkstone-purple;
+
+    &:hover {
+        background-color: $highlight-purple;
+        color: $pure-white;
+    }
+}

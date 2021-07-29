@@ -1,0 +1,30 @@
+// import open sans (weight 300, 400, 700, 300-italic)
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+// common color variables
+$greyscale1: #FAFAFA;
+$greyscale2: #E0E0E0;
+$greyscale3: #C0C0C0;
+$greyscale4: #909090;
+
+// main color palette
+$inkstone-purple: #904989;
+$highlight-purple: #B1049C;
+$pink: #E33292;
+$text-purple: #4F284B;
+$pure-white: #FFFFFF;
+$light-grey-bg: $greyscale1;
+$grey-box: $greyscale2;
+
+// component colors
+$disabled-bg: $greyscale2;
+$disabled-text: $greyscale3;
+
+// standard fonts
+$standard-font: 'Open Sans', sans-serif;
+$light-font-weight: 300;
+$standard-font-weight: 400;
+$bold-font-weight: 700;
+$title-font-size: calc(min(max(3vw, 25px), 40px));
+$text-font-size: calc(min(max(2vw, 13px), 16px));
+$button-font-size: calc(min(max(2vw, 18px), 24px));
