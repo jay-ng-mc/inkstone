@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    .headerActionBar {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(7, 1fr);
+        // grid-template-rows: repeat(4, 1fr);
+        .headerRouterLinks {
+            grid-column-start: 3;
+            grid-column-end: 6;
+            .list {
+                text-align:center;
+                padding: 0;
+                li {
+                    display: inline;
+                    text-align: center;
+                    padding: 15px;
+                }
+            }
+        }
+        .languageSelector {
+            justify-self: flex-end;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            margin-right: 10px;
+        }
+    }
+}

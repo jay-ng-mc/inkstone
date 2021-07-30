@@ -1,0 +1,58 @@
+@import '../../base.scss';
+@import '../button/button.scss';
+
+.languageSelector {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    .languageSelectorButton {
+        @include button;
+        font-size: calc(min(max(1.7vw, 8px), 12px));
+        font-weight: $light-font-weight;
+        letter-spacing: 0;
+        padding-top: calc(min(max(0.6vw, 1px), 4px));
+        padding-bottom: calc(min(max(0.6vw, 1px), 4px));
+        padding-left: calc(min(max(1.6vw, 7px), 10px));
+        padding-right: calc(min(max(1.6vw, 7px), 10px));
+        margin: 0 3px 0 3px;
+        background-color: $pure-white;
+
+        .languageSelectorButtonText {
+            display: block;
+            white-space: nowrap;
+        }
+        .buttonIcon {
+            width: calc(min(max(2.55vw, 17.8px), 26.7px));
+            height: calc(min(max(1.719vw, 12px), 18px));
+            margin-left: calc(min(max(0.6vw, 3px), 5px));
+        }
+        
+        &:hover {
+            background-color: $greyscale1;
+            .languageSelectorButtonText {
+                color: $greyscale3;
+            }
+        }
+        &:disabled {
+            background-color: $greyscale2;
+            .languageSelectorButtonText {
+                color: $text-purple;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .languageSelector {
+        .languageSelectorButton {
+            padding: 0;
+            margin: 0;
+            .languageSelectorButtonText {
+                display: none;
+            }
+            .buttonIcon {
+                margin: 3px;
+            }
+        }
+    }
+}
