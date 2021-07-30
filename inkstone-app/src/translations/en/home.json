@@ -1,0 +1,14 @@
+{
+    "homeTopBanner": {
+        "header": "Speak like a native.",
+        "text": "Are you going to fit in? We are your top choice for professional and academic English.",
+        "buttonText": "Services"
+    },
+    "homePageContent": {
+        "header": "What we do",
+        "text": {
+            "line1": "Academic English competency is critical in university and careers. Inkstone offers courses and writing assistance to enable learners to use English more like native users.",
+            "line2": "Inkstone's teaching team fully comprises of native English speakers and experienced private tutors. Our clients have achieved top scores in IELTS, TOEFL, SAT, IB and A-level examinations. We have worked with international adult professionals in the business, tourism and security industries."
+        }
+    }
+}

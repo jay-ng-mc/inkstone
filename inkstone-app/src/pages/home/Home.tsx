@@ -1,34 +1,41 @@
+import { useTranslation } from 'react-i18next'
 import InvertedButton from '../../components/button/InvertedButton'
 import './Home.scss'
 
 function Home() {
+    const { t, i18n } = useTranslation(['home'])
     return (
         <div className="homePage">
-            <TopBanner/>
+            <TopBanner t={t}/>
             <img className="homeTeamBanner" src="teamBannerBW.png"/>
-            <HomePageContent/>
+            <HomePageContent t={t}/>
+            <div>
+                <button type="button" onClick={() => i18n.changeLanguage('zh_CN')}>zh</button>
+            </div>
         </div>
     )
 }
 
-function TopBanner() {
+function TopBanner(props: any) {
+    const t = props.t // receive the translate function from parent
     return (
         <div className="homeTopBanner">
-            <div className="header">Speak like a native.</div>
+            <div className="header">{t('homeTopBanner.header')}</div>
             <hr className="hr-custom"></hr>
-            <div className="text">Are you going to fit in? We are your top choice for professional and academic English.</div>
-            <InvertedButton buttonName="homeToServicesButton" buttonText="Services" buttonIcon={true}/>
+            <div className="text">{t('homeTopBanner.text')}</div>
+            <InvertedButton buttonName="homeToServicesButton" buttonText={t('homeTopBanner.buttonText')} buttonIcon={true}/>
         </div>
     )
 }
 
-function HomePageContent() {
+function HomePageContent(props: any) {
+    const t = props.t
     return (
         <div className="homePageContent">
-            <div className="header">What we do</div>
+            <div className="header">{t('homePageContent.header')}</div>
             <div className="text">
-                <p>Academic English competency is critical in university and careers. Inkstone offers courses and writing assistance to enable learners to use English more like native users.</p>
-                <p>Inkstone's teaching team fully comprises of native English speakers and experienced private tutors. Our clients have achieved top scores in IELTS, TOEFL, SAT, IB and A-level examinations. We have worked with international adult professionals in the business, tourism and security industries.</p>
+                <p>{t('homePageContent.text.line1')}</p>
+                <p>{t('homePageContent.text.line2')}</p>
             </div>
         </div>
     )
