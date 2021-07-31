@@ -1,21 +1,50 @@
+@import '../../base.scss';
+
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    .headerLogo {
+        align-self: center;
+        height: auto;
+        width: calc(min(max(100px, 32.25vw), 258px));
+    }
+    .headerHorizontalRule {
+        border-bottom: 1px solid $text-purple;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        margin: 0;
+        width: 90%;
+        align-self: center;
+    }
     .headerActionBar {
         display: grid;
+        height: 8vw;
+        max-height: 40px;
         width: 100vw;
         grid-template-columns: repeat(7, 1fr);
-        // grid-template-rows: repeat(4, 1fr);
         .headerRouterLinks {
+            justify-self: center;
+            display: flex;
             grid-column-start: 3;
             grid-column-end: 6;
-            .list {
-                text-align:center;
+            align-items: center;
+            .headerRouterLinksList {
+                text-align: center;
                 padding: 0;
+                margin: 0;
                 li {
                     display: inline;
                     text-align: center;
-                    padding: 15px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: calc(min(max(3.5vw, 12px), 20px));
+                    a {
+                        text-decoration: none; // remove underline from hyperlink
+                        color: $text-purple;
+                    }
                 }
             }
         }
@@ -23,7 +52,14 @@
             justify-self: flex-end;
             grid-column-start: 6;
             grid-column-end: 8;
-            margin-right: 10px;
+            margin-right: 5.5vw;
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
