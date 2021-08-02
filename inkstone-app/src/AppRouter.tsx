@@ -7,6 +7,7 @@ import {
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer';
 
 export default function RouterPanel() {
   return (
@@ -20,6 +21,7 @@ export default function RouterPanel() {
           <Home />
         </Route>
       </Switch>
+      <Footer/>
     </Router>
   );
 }
