@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 // common color variables
-$greyscale1: #FAFAFA;
+$greyscale1: #F0F0F0;
 $greyscale2: #E0E0E0;
 $greyscale3: #C0C0C0;
 $greyscale4: #909090;
@@ -28,3 +28,8 @@ $bold-font-weight: 700;
 $title-font-size: calc(min(max(3vw, 25px), 40px));
 $text-font-size: calc(min(max(2vw, 13px), 16px));
 $button-font-size: calc(min(max(2vw, 18px), 24px));
+
+@mixin generalFontTemplate {
+    color: $text-purple;
+    text-decoration: none;
+}

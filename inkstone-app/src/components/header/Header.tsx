@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import {
     Link
 } from 'react-router-dom';
+import Popup from 'reactjs-popup';
 import LanguageSelector from '../languageSelector/LanguageSelector'
 import './Header.scss'
 
@@ -37,7 +38,25 @@ function RouterLinks() {
                     <Link to="/about">{t('headerRouterLinks.about')}</Link>
                 </li>
                 <li>
-                    <Link to="/services">{t('headerRouterLinks.services')}</Link>
+                    <Popup
+                    // className="headerRouterServicesDropdown"
+                    trigger={<div className="headerRouterServicesTrigger">{t('headerRouterLinks.services')}</div>}
+                    on="click"
+                    closeOnDocumentClick
+                    position="bottom left"
+                    arrow={false}>
+                        <div className="headerRouterServicesDropdownList">
+                            <Link to="ielts-speaking" className="headerRouterServicesDropdownListItem">
+                                {t('headerRouterServicesDropdownOptions.ielts-speaking')}
+                            </Link>
+                            <Link to="writing-service" className="headerRouterServicesDropdownListItem">
+                                {t('headerRouterServicesDropdownOptions.writing-service')}
+                            </Link>
+                            <Link to="essay-writing-clinic" className="headerRouterServicesDropdownListItem">
+                                {t('headerRouterServicesDropdownOptions.essay-clinic')}
+                            </Link>
+                        </div>
+                    </Popup>
                 </li>
             </ul>
             </nav>

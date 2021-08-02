@@ -3,5 +3,10 @@
         "home": "Home",
         "about": "About",
         "services": "Services"
+    },
+    "headerRouterServicesDropdownOptions": {
+        "ielts-speaking": "IELTS Speaking Course",
+        "writing-service": "Writing Services",
+        "essay-clinic": "Essay Writing Clinic"
     }
 }

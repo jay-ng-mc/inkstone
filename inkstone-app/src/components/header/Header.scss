@@ -42,7 +42,10 @@
                     padding-right: 15px;
                     font-size: calc(min(max(3.5vw, 12px), 20px));
                     a {
-                        text-decoration: none; // remove underline from hyperlink
+                        @include generalFontTemplate;
+                    }
+                    .headerRouterServicesTrigger {
+                        display: inline;
                         color: $text-purple;
                     }
                 }
@@ -53,6 +56,27 @@
             grid-column-start: 6;
             grid-column-end: 8;
             margin-right: 5.5vw;
+        }
+    }
+}
+
+// inside popup
+.headerRouterServicesDropdownList {
+    background-color: $greyscale1;
+    padding: 1vw;
+    position: relative;
+    left: -1vw;
+    display: flex;
+    flex-direction: column;
+    .headerRouterServicesDropdownListItem {
+        @include generalFontTemplate;
+        margin-bottom: 0.5vw;
+        margin-top: 0.5vw;
+        font-size: calc(min(max(3.5vw, 12px), 16px));
+        border-bottom: 1px solid;
+        border-color: $greyscale3;
+        &:hover {
+            color: $greyscale4;
         }
     }
 }
