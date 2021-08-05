@@ -5,6 +5,9 @@
     @include button;
     background-color: $pure-white;
     color: $inkstone-purple;
+    g{
+        fill: $inkstone-purple;
+    }
 
     &:hover {
         background-color: $highlight-purple;
