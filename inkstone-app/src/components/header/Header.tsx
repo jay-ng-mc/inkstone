@@ -55,7 +55,7 @@ function RouterLinks() {
                             <Link to="writing-service" className="headerRouterServicesDropdownListItem">
                                 {t('headerRouterServicesDropdownOptions.writing-service')}
                             </Link>
-                            <Link to="essay-writing-clinic" className="headerRouterServicesDropdownListItem">
+                            <Link to="essay-clinic" className="headerRouterServicesDropdownListItem">
                                 {t('headerRouterServicesDropdownOptions.essay-clinic')}
                             </Link>
                         </div>

@@ -4,6 +4,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 // import translation files
+import placeholder_en from './translations/en/placeholder.json'
+import placeholder_zh_CN from './translations/zh_CN/placeholder.json'
 import home_en from './translations/en/home.json'
 import home_zh_CN from './translations/zh_CN/home.json'
 import header_en from './translations/en/header.json'
@@ -35,13 +37,15 @@ i18n
             home: home_en,
             header: header_en,
             about: about_en,
-            services: services_en
+            services: services_en,
+            placeholder: placeholder_en
         },
         zh_CN: {
             home: home_zh_CN,
             header: header_zh_CN,
             about: about_zh_CN,
-            services: services_zh_CN
+            services: services_zh_CN,
+            placeholder: placeholder_zh_CN
         },
     }
   });

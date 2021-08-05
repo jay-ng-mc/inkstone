@@ -1,0 +1,15 @@
+@import '../../base.scss';
+
+.placeholder {
+    color: $inkstone-purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    .placeholderHeader {
+        font-size: calc(min(max(30px, 5vw), 60px));
+    }
+    .placeholderText {
+        font-size: calc(min(max(15px, 2vw), 30px));
+    }
+}

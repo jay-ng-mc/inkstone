@@ -1,5 +1,6 @@
 @import '../../base.scss';
 .footer {
+    // margin-top: auto; // makes it stick to bottom if there's too much space
     display: flex;
     flex-direction: column;
     align-items: center;
