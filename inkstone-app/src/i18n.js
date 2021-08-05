@@ -10,6 +10,8 @@ import header_en from './translations/en/header.json'
 import header_zh_CN from './translations/zh_CN/header.json'
 import about_en from './translations/en/about.json'
 import about_zh_CN from './translations/zh_CN/about.json'
+import services_en from './translations/en/services.json'
+import services_zh_CN from './translations/zh_CN/services.json'
 
 i18n
   // load translation using http -> see /public/locales
@@ -32,12 +34,14 @@ i18n
         en: {
             home: home_en,
             header: header_en,
-            about: about_en
+            about: about_en,
+            services: services_en
         },
         zh_CN: {
             home: home_zh_CN,
             header: header_zh_CN,
-            about: about_zh_CN
+            about: about_zh_CN,
+            services: services_zh_CN
         },
     }
   });

@@ -1,0 +1,32 @@
+@import '../../base.scss';
+
+.ieltsSpeaking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ieltsSpeakingPoster {
+        width: 90vw;
+        max-width: 700px;
+    }
+    .whatIsIelts {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        align-items: center;
+        .whatIsIeltsHeader {
+            font-size: $header-font-size;
+            color: $inkstone-purple;
+            font-weight: $bold-font-weight;
+        }
+        .whatIsIeltsText {
+            color: $text-purple;
+            width: 90vw;
+            max-width: 700px;
+        }
+    }
+    .ieltsSpeakingCurriculumOverviewImage {
+        width: 90vw;
+        max-width: 700px;
+        margin-bottom: -6vw;
+    }
+}

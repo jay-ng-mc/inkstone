@@ -31,7 +31,7 @@ function TeamMemberGrid(props: TeamMemberGridProps) {
     return (
         <div className="aboutTeamMemberGrid">
             <div className="aboutTeamMemberPanel">
-                {props.teamMembers.map(teamMember => <TeamMemberBox {...teamMember}/>)}
+                {props.teamMembers.map(teamMember => <TeamMemberBox key={teamMember.teamMemberName} {...teamMember}/>)}
             </div>
         </div>
     )
