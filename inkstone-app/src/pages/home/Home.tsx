@@ -2,12 +2,15 @@ import { useTranslation } from 'react-i18next'
 import InvertedButton from '../../components/button/InvertedButton'
 import './Home.scss'
 
+// images
+import teamBannerBW from '../../images/teamBannerBW.png'
+
 function Home() {
     const { t, i18n } = useTranslation(['home'])
     return (
         <div className="homePage">
             <TopBanner t={t}/>
-            <img className="homeTeamBanner" src="/images/teamBannerBW.png"/>
+            <img className="homeTeamBanner" src={teamBannerBW} alt="Inkstone Team Members Banner"/>
             <HomePageContent t={t}/>
         </div>
     )

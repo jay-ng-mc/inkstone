@@ -1,5 +1,11 @@
 import './Footer.scss'
 
+// images
+import fb_icon from '../../images/fb_icon.png'
+import linkedin_icon from '../../images/linkedin_icon.png'
+import wechatID_icon from '../../images/wechatID_icon.png'
+import wechatQR_icon from '../../images/wechatQR_icon.png'
+
 export default function Footer() {
     return (
         <div className="footer">
@@ -12,10 +18,10 @@ export default function Footer() {
 function InkstoneOutlinks() {
     return (
         <div className="footerInkstoneOutlinks">
-            <a href="https://www.facebook.com/inkstone.edu"><img className="footerSocialMediaOutlinkIcon" alt="fb_link" src="images/fb_icon.png"/></a>
-            <a href="https://www.linkedin.com/company/inkstone-llc/"><img className="footerSocialMediaOutlinkIcon" alt="linkedin" src="images/linkedin_icon.png"/></a>
-            <img className="footerWechatID" alt="wechat_id" src="images/wechatID_icon.png"/>
-            <img className="footerWechatQR" alt="wechat_qr" src="images/wechatQR_icon.png"/>
+            <a href="https://www.facebook.com/inkstone.edu"><img className="footerSocialMediaOutlinkIcon" alt="fb_link" src={fb_icon}/></a>
+            <a href="https://www.linkedin.com/company/inkstone-llc/"><img className="footerSocialMediaOutlinkIcon" alt="linkedin" src={linkedin_icon}/></a>
+            <img className="footerWechatID" alt="wechat_id" src={wechatID_icon}/>
+            <img className="footerWechatQR" alt="wechat_qr" src={wechatQR_icon}/>
         </div>
     )
 }

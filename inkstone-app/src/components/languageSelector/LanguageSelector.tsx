@@ -3,6 +3,10 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import './LanguageSelector.scss'
 
+// images
+import flag_GB from '../../images/flag_GB.png'
+import flag_CN from '../../images/flag_CN.png'
+
 export default function LanguageSelector() {
     const { t, i18n } = useTranslation(['home'])
     return (
@@ -33,7 +37,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 disabled={this.state.lang === 'en'} 
                 onClick={() => this.changeLanguage('en')}>
                     <span className="languageSelectorButtonText">English</span>
-                    <img className="buttonIcon" src={"images/flag_GB.png"} alt="EN"/>
+                    <img className="buttonIcon" src={flag_GB} alt="EN"/>
                 </button>
                 <button 
                 className="languageSelectorButton"
@@ -41,7 +45,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 disabled={this.state.lang === 'zh_CN'} 
                 onClick={() => this.changeLanguage('zh_CN')}>
                     <span className="languageSelectorButtonText">简体中文</span>
-                    <img className="buttonIcon" src={"images/flag_CN.png"} alt="CN"/>
+                    <img className="buttonIcon" src={flag_CN} alt="CN"/>
                 </button>
             </div>
         )
