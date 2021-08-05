@@ -4,12 +4,13 @@ import {
   Route,
 } from 'react-router-dom';
 
+import Placeholder from './pages/placeholder/Placeholder';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
 import IeltsSpeaking from './pages/services/IeltsSpeaking';
-import Placeholder from './pages/placeholder/Placeholder';
+import EssayClinic from './pages/services/EssayClinic';
 import './AppRouter.scss'
 
 export default function RouterPanel() {
@@ -26,7 +27,7 @@ export default function RouterPanel() {
             <Placeholder/>
           </Route>
           <Route path="/essay-clinic">
-            <Placeholder/>
+            <EssayClinic/>
           </Route>
           <Route path="/about">
             <About />

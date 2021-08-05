@@ -5,6 +5,7 @@
     align-self: center;
     display: flex;
     flex-direction: row;
+    font-family: $standard-font;
     .languageSelectorButton {
         @include button;
         font-size: calc(min(max(1.7vw, 8px), 12px));

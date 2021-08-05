@@ -15,7 +15,7 @@ export default function IeltsSpeaking() {
             
             {/* what is ielts */}
             <div className="whatIsIelts">
-                <div className="whatIsIeltsHeader">{t('ieltsSpeaking.ieltsSpeakingWhatIsIelts.title')}</div>
+                <div className="whatIsIeltsHeader">{t('ieltsSpeaking.ieltsSpeakingWhatIsIelts.header')}</div>
                 <div className="whatIsIeltsText">{t('ieltsSpeaking.ieltsSpeakingWhatIsIelts.text')}</div>
             </div>
             

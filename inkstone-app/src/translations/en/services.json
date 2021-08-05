@@ -2,9 +2,13 @@
     "ieltsSpeaking": {
         "ieltsSpeakingSignupButtonText": "Sign up now",
         "ieltsSpeakingWhatIsIelts": {
-            "title": "What is IELTS?",
+            "header": "What is IELTS?",
             "text": "It is an English language test for study or work in an anglophone country. Along with the TOEFL, it constitutes the only two internationally recognized English tests in the world. A good IELTS grade is mandatory to enter many of the top universities, and useful in securing employment with English speaking companies."
         },
         "ieltsSpeakingCurriculumOverviewHeader": "Curriculum Overview"
+    },
+    "essayClinic": {
+        "header": "Essay Writing Clinic",
+        "text": "Our native English teachers provide top notch feedback on your essays. Bring in your work for a 40 minute live consultation. Reservations via messenger on our Facebook page or via WeChat."
     }
 }

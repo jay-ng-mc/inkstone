@@ -1,6 +1,7 @@
 @import '../../base.scss';
 .about {
     background-color: $greyscale1;
+    font-family: $standard-font;
     .aboutTeamHeader {
         font-size: $header-font-size;
         font-weight: $bold-font-weight;
@@ -31,8 +32,9 @@
                 .aboutTeamMemberDescription {
                     margin-top: 10px;
                     text-align: justify;
+                    font-weight: $standard-font-weight;
                     .aboutTeamMemberDescriptionName {
-                        font-weight: $bold-font-weight;
+                        font-weight: $extra-bold-font-weight;
                     }
                 }
             }

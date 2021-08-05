@@ -2,9 +2,13 @@
     "ieltsSpeaking": {
         "ieltsSpeakingSignupButtonText": "报名",
         "ieltsSpeakingWhatIsIelts": {
-            "title": "什么是 IELTS?",
+            "header": "什么是 IELTS?",
             "text": "IELTS是一项英語語言測試，主要测试赴海外学习或工作者的英语能力。它與托福考試一起構成了僅有的兩項國際認可的英語考試。良好的雅思成績是進入許多頂尖大學的必備條件，并且對在以英語为主的公司工作非常有用。"
         },
         "ieltsSpeakingCurriculumOverviewHeader": "课程大纲"
+    },
+    "essayClinic": {
+        "header": "論文寫作工作坊",
+        "text": "我们的英语母语教师可以就任何论文或文章为您提供专业的校订和反馈。在这个40分钟的工作坊里，我们的教师可以与您现场讨论如何让您的文法更上一层楼。预约时间请发信息给我们的脸书页面或者微信公众号。"
     }
 }

@@ -1,5 +1,6 @@
 // import open sans (weight 300, 400, 600, 700, 300-italic)
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&display=swap');
 
 // common color variables
 $greyscale1: #F0F0F0;
@@ -21,10 +22,11 @@ $disabled-bg: $greyscale2;
 $disabled-text: $greyscale3;
 
 // standard fonts
-$standard-font: 'Open Sans', sans-serif;
+$standard-font: 'Open Sans', 'Noto Sans SC', sans-serif;
 $light-font-weight: 300;
-$standard-font-weight: 400;
-$bold-font-weight: 600;
+$standard-font-weight: 399; // rouned to 400 for open sans, rounded to 300 for noto sans sc
+$bold-font-weight: 500; // rounded to 600 for open sans, stay at 500 for noto sans sc
+$extra-bold-font-weight: 700;
 $header-font-size: calc(min(max(4vw, 25px), 40px));
 $text-font-size: calc(min(max(2vw, 13px), 16px));
 $button-font-size: calc(min(max(2vw, 18px), 24px));

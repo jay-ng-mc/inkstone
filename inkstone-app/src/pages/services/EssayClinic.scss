@@ -1,0 +1,19 @@
+@import '../../base.scss';
+
+.essayClinic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $standard-font;
+    .essayClinicHeader {
+        font-size: $header-font-size;
+        color: $inkstone-purple;
+        font-weight: $bold-font-weight;
+        margin: 20px;
+    }
+    .essayClinicText {
+        color: $text-purple;
+        width: 90vw;
+        max-width: 700px;
+    }
+}

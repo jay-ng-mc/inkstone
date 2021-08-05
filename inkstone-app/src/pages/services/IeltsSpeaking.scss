@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: $standard-font;
     .ieltsSpeakingPoster {
         margin-top: 25px;
         width: 90vw;
@@ -24,6 +25,7 @@
             color: $text-purple;
             width: 90vw;
             max-width: 700px;
+            font-weight: $standard-font-weight;
         }
     }
     .ieltsSpeakingCurriculumOverviewHeader {
