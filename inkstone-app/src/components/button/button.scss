@@ -20,6 +20,10 @@
         color: $disabled-text;
     }
 
+    &:enabled {
+        cursor: pointer;
+    }
+
     .buttonIcon {
         height: $button-font-size;
         align-self: center;

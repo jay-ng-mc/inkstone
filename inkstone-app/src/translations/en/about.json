@@ -1,0 +1,32 @@
+{
+    "aboutTeam": {
+        "aboutFounders": {
+            "aboutFoundersNames": {
+                "thomasName": "Thomas Sayers",
+                "jayName": "Jay Ng"
+            },
+            "aboutFoundersDescriptions": {
+                "thomasDesc": " is a Master of Marketing candidate at the University of Auckland (New Zealand) with an undergraduate background in political science and international relations, media and communication and Chinese. He has 6 years of private tutoring experience and works one-on-one with international adult professionals to assist them with English language learning.  He graduated from the School of the Nations with an International Baccalaureate (IB) diploma in 2017.",
+                "jayDesc": " is a computer science graduate at Nanyang Technological University, Singapore. He is a native English speaker with seven years of private tutoring experience. He grew up in Macau (China), attending international school and graduating top of the class with an International Baccalaureate (IB) diploma. He completed part of his bachelor degree at the University of Melbourne (Australia), and worked at a tech startup in Montpellier (France). He specializes in artificial intelligence and data science."
+            }
+        },
+        "aboutMembers": {
+            "aboutMembersNames": {
+                "sophieName": "Sophie Wagle",
+                "sashaName": "Sasha Arnett",
+                "xavierName": "Xavier Kong",
+                "miaName": "Mia Alvarez"
+            },
+            "aboutMembersDescriptions": {
+                "sophieDesc": " is a neuroscience specialist and scholarship student at the University of Toronto (Canada). She has six years of English and science tutoring experience for IGCSE and IB students. Her experience includes teaching English one-on-one, in small groups, and in classes of up to 40 students. She studied at an international school in Macau and graduated with an IB diploma. ",
+                "sashaDesc": " is completing her psychology specialist degree and education degree at the University of Toronto (Canada). She has over six years of teaching experiences ranging from private tutoring to classroom teaching from the kindergarten level up to the university level in multiple countries, such as China, Japan, and Canada. She previously attended public and private schools in mainland China and Macau. She graduated top of her class with an IB diploma.",
+                "xavierDesc": " is a Chemistry major at the Hong Kong University of Science and Technology. A native English speaker, he has over 6 years of experience working with English second language students. He attended an international school, graduating top of the class with an IB diploma. He has worked closely with the undergraduate recruitment team as a senior student ambassador, giving university integration talks to prospective students. He is focusing on language development coaching for non-native language learners and is currently learning two foreign languages.",
+                "miaDesc": " is studying towards a bachelor’s degree in English and Secondary Education at the University of Guam (USA). A native English speaker, she has been tutoring students from Macau and Guam across a range of levels for the past five years. She attended an international school in Macau and graduated with an IB diploma. Mia is passionate about writing and is also pursuing a minor in this field. She is currently working on an anthology of short stories and screenplays with other writers in Guam."
+            }
+        }
+    },
+    "aboutTeamHeaders": {
+        "aboutFounders": "ABOUT THE FOUNDERS",
+        "aboutMembers": "OUR TEAM"
+    }
+}

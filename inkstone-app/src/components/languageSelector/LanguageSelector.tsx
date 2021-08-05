@@ -33,7 +33,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 disabled={this.state.lang === 'en'} 
                 onClick={() => this.changeLanguage('en')}>
                     <span className="languageSelectorButtonText">English</span>
-                    <img className="buttonIcon" src="flag_GB.png" alt="EN"/>
+                    <img className="buttonIcon" src={"images/flag_GB.png"} alt="EN"/>
                 </button>
                 <button 
                 className="languageSelectorButton"
@@ -41,7 +41,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 disabled={this.state.lang === 'zh_CN'} 
                 onClick={() => this.changeLanguage('zh_CN')}>
                     <span className="languageSelectorButtonText">简体中文</span>
-                    <img className="buttonIcon" src="flag_CN.png" alt="CN"/>
+                    <img className="buttonIcon" src={"images/flag_CN.png"} alt="CN"/>
                 </button>
             </div>
         )

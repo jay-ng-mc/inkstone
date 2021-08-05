@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="homePage">
             <TopBanner t={t}/>
-            <img className="homeTeamBanner" src="teamBannerBW.png"/>
+            <img className="homeTeamBanner" src="/images/teamBannerBW.png"/>
             <HomePageContent t={t}/>
         </div>
     )

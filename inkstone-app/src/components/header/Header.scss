@@ -27,8 +27,7 @@
         .headerRouterLinks {
             justify-self: center;
             display: flex;
-            grid-column-start: 3;
-            grid-column-end: 6;
+            grid-column: 3 / 6;
             align-items: center;
             .headerRouterLinksList {
                 text-align: center;
@@ -46,6 +45,7 @@
                     .headerRouterServicesTrigger {
                         display: inline;
                         color: $text-purple;
+                        cursor: pointer;
                     }
                 }
             }
@@ -76,6 +76,19 @@
         border-color: $greyscale3;
         &:hover {
             color: $greyscale4;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header{
+        .headerActionBar {
+            .headerRouterLinks {
+                grid-column: 2 / 8;
+            }
+            .languageSelector {
+                grid-column: 8 / 9;
+            }
         }
     }
 }

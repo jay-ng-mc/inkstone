@@ -29,6 +29,9 @@
         
         &:hover {
             background-color: $greyscale1;
+            &:enabled {
+                cursor: pointer;
+            }
             .languageSelectorButtonText {
                 color: $greyscale3;
             }

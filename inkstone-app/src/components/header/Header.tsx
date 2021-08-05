@@ -9,7 +9,7 @@ import './Header.scss'
 export default function Header () {
     return (
         <div className="header">
-            <img className="headerLogo" src="inkstoneLogo.png" alt="Inkstone Logo"/>
+            <img className="headerLogo" src={"images/inkstoneLogo.png"} alt="Inkstone Logo"/>
             <hr className="headerHorizontalRule"></hr>
             <ActionBar/>
         </div>
