@@ -20,6 +20,7 @@ export default function IeltsSpeaking() {
             </div>
             
             {/* curriculum overview */}
+            <div className="ieltsSpeakingCurriculumOverviewHeader">{t('ieltsSpeaking.ieltsSpeakingCurriculumOverviewHeader')}</div>
             {curriculumImages.map(c => (
                 <img className="ieltsSpeakingCurriculumOverviewImage"
                 key={c}

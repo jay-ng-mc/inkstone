@@ -17,12 +17,19 @@
             font-size: $header-font-size;
             color: $inkstone-purple;
             font-weight: $bold-font-weight;
+            margin-bottom: 10px;
         }
         .whatIsIeltsText {
             color: $text-purple;
             width: 90vw;
             max-width: 700px;
         }
+    }
+    .ieltsSpeakingCurriculumOverviewHeader {
+        font-size: $header-font-size;
+        color: $inkstone-purple;
+        font-weight: $bold-font-weight;
+        margin-top: 30px;
     }
     .ieltsSpeakingCurriculumOverviewImage {
         width: 90vw;

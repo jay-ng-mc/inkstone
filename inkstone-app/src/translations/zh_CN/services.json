@@ -1,9 +1,10 @@
 {
     "ieltsSpeaking": {
-        "ieltsSpeakingSignupButtonText": "Sign up now",
+        "ieltsSpeakingSignupButtonText": "报名",
         "ieltsSpeakingWhatIsIelts": {
-            "title": "What is IELTS?",
-            "text": "It is an English language test for study or work in an anglophone country. Along with the TOEFL, it constitutes the only two internationally recognized English tests in the world. A good IELTS grade is mandatory to enter many of the top universities, and useful in securing employment with English speaking companies."
-        }
+            "title": "什么是 IELTS?",
+            "text": "IELTS是一项英語語言測試，主要测试赴海外学习或工作者的英语能力。它與托福考試一起構成了僅有的兩項國際認可的英語考試。良好的雅思成績是進入許多頂尖大學的必備條件，并且對在以英語为主的公司工作非常有用。"
+        },
+        "ieltsSpeakingCurriculumOverviewHeader": "课程大纲"
     }
 }
