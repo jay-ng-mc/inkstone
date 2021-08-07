@@ -14,6 +14,8 @@ import about_en from './translations/en/about.json'
 import about_zh_CN from './translations/zh_CN/about.json'
 import services_en from './translations/en/services.json'
 import services_zh_CN from './translations/zh_CN/services.json'
+import enroll_en from './translations/en/enroll.json'
+import enroll_zh_CN from './translations/zh_CN/enroll.json'
 
 i18n
   // load translation using http -> see /public/locales
@@ -38,14 +40,16 @@ i18n
             header: header_en,
             about: about_en,
             services: services_en,
-            placeholder: placeholder_en
+            placeholder: placeholder_en,
+            enroll: enroll_en
         },
         zh_CN: {
             home: home_zh_CN,
             header: header_zh_CN,
             about: about_zh_CN,
             services: services_zh_CN,
-            placeholder: placeholder_zh_CN
+            placeholder: placeholder_zh_CN,
+            enroll: enroll_zh_CN
         },
     }
   });

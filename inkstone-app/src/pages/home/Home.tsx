@@ -1,4 +1,7 @@
 import { useTranslation } from 'react-i18next'
+import {
+    Link
+} from 'react-router-dom';
 import InvertedButton from '../../components/button/InvertedButton'
 import './Home.scss'
 
@@ -23,7 +26,9 @@ function TopBanner(props: any) {
             <div className="homeTopBannerHeader">{t('homeTopBanner.header')}</div>
             <hr className="hr-custom"></hr>
             <div className="homeTopBannerText">{t('homeTopBanner.text')}</div>
-            <InvertedButton buttonName="homeToServicesButton" buttonText={t('homeTopBanner.buttonText')} buttonIcon={true}/>
+            <Link to="ielts-speaking" className="homeToServicesLink">
+                <InvertedButton buttonName="homeToServicesButton" buttonText={t('homeTopBanner.buttonText')} buttonIcon={true}/>
+            </Link>
         </div>
     )
 }

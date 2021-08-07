@@ -3,7 +3,8 @@
     flex-direction: column;
     height: 100%;
     .mainPage{
-        margin-top: auto;
-        margin-bottom: auto;
+        display: flex;
+        flex-grow: 1; // take space remaining from header and footer
+        justify-content: center;
     }
 }

@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import IeltsSpeaking from './pages/services/IeltsSpeaking';
 import EssayClinic from './pages/services/EssayClinic';
 import './AppRouter.scss'
+import Enroll from './pages/enroll/Enroll';
 
 export default function RouterPanel() {
   return (
@@ -20,6 +21,9 @@ export default function RouterPanel() {
         <Header/>
         <div className="mainPage">
         <Switch>
+          <Route path="/enroll">
+            <Enroll/>
+          </Route>
           <Route path="/ielts-speaking">
             <IeltsSpeaking/>
           </Route>

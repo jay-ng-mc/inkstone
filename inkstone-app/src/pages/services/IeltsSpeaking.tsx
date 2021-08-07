@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import GenericButton from '../../components/button/GenericButton'
 import './IeltsSpeaking.scss'
 
@@ -33,5 +34,9 @@ export default function IeltsSpeaking() {
 }
 
 function SignUpButton(props: {t: any}) {
-    return <GenericButton buttonName="ieltsSpeakingSignUp" buttonText={props.t('ieltsSpeaking.ieltsSpeakingSignupButtonText')} buttonIcon={true}/>
+    return (
+        <Link to='enroll' className="ieltsSpeakingSignUp">
+            <GenericButton buttonName="ieltsSpeakingSignUp" buttonText={props.t('ieltsSpeaking.ieltsSpeakingSignupButtonText')} buttonIcon={true}/>
+        </Link>
+    )
 }
