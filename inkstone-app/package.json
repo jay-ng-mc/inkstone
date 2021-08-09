@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "concurrently": "^6.2.0",
+    "firebase": "^8.9.0",
     "i18next": "^20.3.5",
     "i18next-browser-languagedetector": "^6.1.2",
     "i18next-http-backend": "^1.3.0",
@@ -24,15 +25,24 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass -w src -o public/css",
+    "watchSass": "node-sass -w src -o public/css",
+    "sass": "node-sass src -o public/css",
     "watchType": "tsc -w",
-    "watch": "concurrently --kill-others \"npm run sass\" \"npm run watchType\""
+    "watch": "concurrently --kill-others \"npm run watchSass\" \"npm run watchType\""
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": [
+        "warn", {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [

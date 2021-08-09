@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import './LanguageSelector.scss'
@@ -8,7 +7,7 @@ import flag_GB from '../../images/flag_GB.png'
 import flag_CN from '../../images/flag_CN.png'
 
 export default function LanguageSelector() {
-    const { t, i18n } = useTranslation(['home'])
+    const { t: _, i18n } = useTranslation(['home'])
     return (
         <LanguageSelectorClass i18n={i18n}/>
     )

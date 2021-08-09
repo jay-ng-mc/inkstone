@@ -29,7 +29,7 @@ function ActionBar() {
 }
 
 function RouterLinks() {
-    const { t, i18n } = useTranslation(['header'])
+    const { t } = useTranslation(['header'])
     return (
         <div className="headerRouterLinks">
             <nav>
