@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './About.scss'
 export default function About() {
-    const { t, i18n } = useTranslation(['about'])
+    const { t } = useTranslation(['about'])
 
     // all image names and translation label names must use these names as root words, e.g. thomas.png, thomasName, thomasDesc
     const teamFounders = ['thomas', 'jay'] 

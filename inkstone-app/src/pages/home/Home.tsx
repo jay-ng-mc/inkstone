@@ -9,7 +9,7 @@ import './Home.scss'
 import teamBannerBW from '../../images/teamBannerBW.png'
 
 function Home() {
-    const { t, i18n } = useTranslation(['home'])
+    const { t } = useTranslation(['home'])
     return (
         <div className="homePage">
             <TopBanner t={t}/>
