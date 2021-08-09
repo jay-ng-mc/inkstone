@@ -25,9 +25,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass -w src -o public/css",
+    "watchSass": "node-sass -w src -o public/css",
+    "sass": "node-sass src -o public/css",
     "watchType": "tsc -w",
-    "watch": "concurrently --kill-others \"npm run sass\" \"npm run watchType\""
+    "watch": "concurrently --kill-others \"npm run watchSass\" \"npm run watchType\""
   },
   "eslintConfig": {
     "extends": [
