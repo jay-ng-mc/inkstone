@@ -23,4 +23,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INKSTONE_SITE }}'
           channelId: preview
           projectId: inkstone-site
+          entryPoint: "./inkstone-app"
 
