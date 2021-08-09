@@ -4,7 +4,7 @@ import GenericButton from '../../components/button/GenericButton'
 import './IeltsSpeaking.scss'
 
 export default function IeltsSpeaking() {
-    const { t, i18n } = useTranslation('services')
+    const { t } = useTranslation('services')
     const curriculumImages = ['curriculum1', 'curriculum2', 'curriculum3']
     return (
         <div className="ieltsSpeaking">

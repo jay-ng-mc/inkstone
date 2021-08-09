@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import './EssayClinic.scss'
 
 export default function EssayClinic() {
-    const { t, i18n } = useTranslation('services')
+    const { t } = useTranslation('services')
     return (
         <div className="essayClinic">
             <div className="essayClinicHeader">{t('essayClinic.header')}</div>
