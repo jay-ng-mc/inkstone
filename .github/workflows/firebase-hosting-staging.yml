@@ -5,7 +5,10 @@ name: Deploy to Firebase Hosting preview on merge to staging branch
 'on':
   push:
     branches:
-      - staging 
+      - staging
+  pull_request:
+    branches:
+      - main
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
