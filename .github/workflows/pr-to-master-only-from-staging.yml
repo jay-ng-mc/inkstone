@@ -10,8 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
   fail_if_pr_not_from_staging:
+    if: ne(${{ github.head_ref }}, staging)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - run: exit 1
-        condition: ne(${{ github.head_ref }}, staging)
