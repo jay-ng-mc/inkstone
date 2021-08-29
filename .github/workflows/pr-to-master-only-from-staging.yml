@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: exit 1
-      - condition: ne(${{ github.head_ref }}, staging)
+      - run: if exit 1
+        condition: ne(${{ github.head_ref }}, staging)
