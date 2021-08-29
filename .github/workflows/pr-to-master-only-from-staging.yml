@@ -2,12 +2,12 @@ name: Only allow pull requests to master from staging
 'on':
   pull_request:
     branches:
-      - pipeline-test
+      - main
 jobs:
   fail_if_pr_not_from_staging:
     runs-on: ubuntu-latest
     env:
-      HEAD_REF: pipeline-test-check-branch-name
+      HEAD_REF: staging
     steps:
       - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
       - name: Head ref not correct
