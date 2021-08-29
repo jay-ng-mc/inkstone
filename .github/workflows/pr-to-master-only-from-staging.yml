@@ -2,7 +2,7 @@ name: Only allow pull requests to master from staging
 'on':
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   fail_if_pr_not_from_staging:
     runs-on: ubuntu-latest
