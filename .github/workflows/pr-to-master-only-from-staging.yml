@@ -11,6 +11,6 @@ jobs:
         working-directory: ./inkstone-app
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run sass && npm run build
-      - run: echo "PR from ${{ github.ref }} to main"
-      - run: echo "test"
+      - run: echo "Ref ${{ github.ref }}"
+      - run: echo "Head ref ${{ github.head_ref }}"
+      - run: echo "Base ref ${{ github.base_ref }}"
