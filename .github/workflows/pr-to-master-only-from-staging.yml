@@ -9,7 +9,8 @@ jobs:
     steps:
       - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
   fail_if_pr_not_from_staging:
-    if: ne(${{ github.head_ref }}, "pipeline-test-check-branch-name")
+    if: ${{ github.head_ref != 'pipeline-test-check-branch-name' }}
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Head ref ${{ github.head_ref }} is not staging branch"
       - run: exit 1
