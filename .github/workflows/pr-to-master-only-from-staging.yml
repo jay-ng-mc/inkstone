@@ -11,8 +11,8 @@ jobs:
   fail_if_pr_not_from_staging:
     runs-on: ubuntu-latest
     steps:
-      if: ${{ github.head_ref != 'pipeline-test-check-branch-name' }}
-        - run: echo "Head ref ${{ github.head_ref }} is not staging branch"
-        - run: exit 1
-      else:
-        - run: exit 0
+      - name: Head ref not staging
+        if: ${{ github.head_ref != 'pipeline-test-check-branch-name' }}
+        run: echo "Head ref ${{ github.head_ref }} is not staging branch" && exit 1
+      - name: Head ref is staging
+        run: exit 0
