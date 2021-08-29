@@ -1,0 +1,17 @@
+name: Only allow pull requests to master from staging
+'on':
+  pull_request:
+    branches:
+      - main
+jobs:
+  fail_if_pr_not_from_staging:
+    runs-on: ubuntu-latest
+    env:
+      HEAD_REF: staging
+    steps:
+      - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
+      - name: Head ref not correct
+        if: ${{ github.head_ref != env.HEAD_REF }}
+        run: echo "Head ref ${{ github.head_ref }} is not ${{env.HEAD_REF}} branch" && exit 1
+      - name: Head ref is correct
+        run: echo "Head ref ${{ github.head_ref }} is ${{env.HEAD_REF}} branch" && exit 0
