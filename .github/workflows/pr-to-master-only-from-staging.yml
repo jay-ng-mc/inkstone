@@ -4,15 +4,14 @@ name: Only allow pull requests to master from staging
     branches:
       - pipeline-test
 jobs:
-  print_pr_details:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
   fail_if_pr_not_from_staging:
     runs-on: ubuntu-latest
+    env:
+      HEAD_REF: pipeline-test-check-branch-name
     steps:
-      - name: Head ref not staging
-        if: ${{ github.head_ref != 'pipeline-test-check-branch-name' }}
-        run: echo "Head ref ${{ github.head_ref }} is not staging branch" && exit 1
-      - name: Head ref is staging
-        run: exit 0
+      - run: echo "PR from ${{ github.head_ref }} to ${{ github.base_ref }}"
+      - name: Head ref not correct
+        if: ${{ github.head_ref != env.HEAD_REF }}
+        run: echo "Head ref ${{ github.head_ref }} is not $env.HEAD_REF branch" && exit 1
+      - name: Head ref is correct
+        run: echo "Head ref ${{ github.head_ref }} is $env.HEAD_REF branch" && exit 0
