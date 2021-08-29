@@ -1,0 +1,15 @@
+name: Only allow pull requests to master from staging
+'on':
+  pull_request:
+    branches:
+      - pipeline-test
+jobs:
+  check_is_staging:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./inkstone-app
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci && npm run sass && npm run build
+      - run: echo "PR from ${{ github.ref }} to main"
