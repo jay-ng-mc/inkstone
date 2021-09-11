@@ -7,7 +7,7 @@ import {
 import Placeholder from './pages/placeholder/Placeholder';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Header from './components/header/Header'
+import HeaderWrapper from './components/header/HeaderWrapper'
 import Footer from './components/footer/Footer';
 import IeltsSpeaking from './pages/services/IeltsSpeaking';
 import EssayClinic from './pages/services/EssayClinic';
@@ -18,7 +18,7 @@ export default function RouterPanel() {
   return (
     <div className="appRouter">
       <Router>
-        <Header/>
+        <HeaderWrapper/>
         <div className="mainPage">
         <Switch>
           <Route path="/enroll">
