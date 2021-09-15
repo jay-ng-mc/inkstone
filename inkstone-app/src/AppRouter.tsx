@@ -21,24 +21,13 @@ export default function RouterPanel() {
         <HeaderWrapper/>
         <div className="mainPage">
         <Switch>
-          <Route path="/enroll">
-            <Enroll/>
-          </Route>
-          <Route path="/ielts-speaking">
-            <IeltsSpeaking/>
-          </Route>
-          <Route path="/writing-service">
-            <Placeholder/>
-          </Route>
-          <Route path="/essay-clinic">
-            <EssayClinic/>
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route exact path="/" component={Home}/>
+          <Route path="/enroll" component={Enroll}/>
+          <Route path="/ielts-speaking" component={IeltsSpeaking}/>
+          <Route path="/writing-service" component={Placeholder}/>
+          <Route path="/essay-clinic" component={EssayClinic}/>
+          <Route path="/about" component={About}/>
+          <Route component={Placeholder}/>
         </Switch>
         </div>
         <Footer/>

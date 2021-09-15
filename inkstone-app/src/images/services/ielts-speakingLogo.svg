@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="ieltsSpeakingLogo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ff0000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="16.916667"
+     inkscape:cx="20.128078"
+     inkscape:cy="24.975369"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient37771"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ff0404;stop-opacity:1;"
+         offset="0"
+         id="stop37769" />
+    </linearGradient>
+  </defs>
+  <ellipse
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path37701"
+     cx="6.4907632"
+     cy="6.4203815"
+     rx="5.8495073"
+     ry="4.3871307" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:3.05707px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.062531px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208436"
+     x="2.5118349"
+     y="7.6586065"
+     id="text2450"><tspan
+       sodipodi:role="line"
+       id="tspan2448"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.05707px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;stroke-width:0.208436"
+       x="2.5118349"
+       y="7.6586065">IELTS</tspan></text>
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 2.142734,9.3529556 C 0.87586205,11.151601 0.89150244,11.13596 0.89150244,11.13596 L 3.7224139,10.369581 Z"
+     id="path38394" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.13229167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 2.0332512,9.8221672 C 2.7214285,8.8055417 2.7214285,8.8055417 2.7214285,8.8055417 l 1.5327584,1.2355913 -1.5483988,0.42229 z"
+     id="path1868" />
+</svg>

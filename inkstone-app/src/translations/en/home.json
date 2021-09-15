@@ -1,10 +1,9 @@
 {
     "homeTopBanner": {
-        "header": "Speak like a native.",
-        "text": "Are you going to fit in? We are your top choice for professional and academic English.",
-        "buttonText": "Services"
+        "header": "Talk like a native with the best online tutors.",
+        "buttonText": "Get Started"
     },
-    "homePageContent": {
+    "homeWhatWeDo": {
         "header": "What we do",
         "text": {
             "line1": "Academic English competency is critical in university and careers. Inkstone offers courses and writing assistance to enable learners to use English more like native users.",

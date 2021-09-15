@@ -1,30 +1,46 @@
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
-    Link
+    Link,
+    useLocation
 } from 'react-router-dom';
-import Popup from 'reactjs-popup';
 import LanguageSelector from '../../languageSelector/LanguageSelector'
 import './ThinHeader.scss'
 
 // images
-import { ReactComponent as InkstoneLogoSVG } from '../../../images/inkstoneLogo.svg'
 import inkstoneLogoPNG from '../../../images/inkstoneLogoHorizontal.png'
+import { ReactComponent as InkstoneLogoBWSVG } from '../../../images/inkstoneLogoBWSimplified.svg'
 
 export default function Header () {
+    const route = useLocation().pathname
+    const useBWHeader = route === "/"
+    const [bwLogo, setBWLogo] = useState(true)
     return (
         <div className="header">
-            <HeaderLogo/>
-            <ActionBar/>
+            {useBWHeader ?
+                <div className="headerContentBW" onMouseEnter={() => {setBWLogo(false)}} onMouseLeave={() => {setBWLogo(true)}}>
+                    <HeaderLogo useBWLogo={bwLogo}/>
+                    <ActionBar/>
+                </div>
+                :
+                <div className="headerContent">
+                    <HeaderLogo useBWLogo={false}/>
+                    <ActionBar/>
+                </div>
+            }
         </div>
     )
 }
 
-function HeaderLogo() {
+function HeaderLogo (props: {useBWLogo: boolean}) {
     return (
         <div className="headerLogo">
             <Link to="">
-                {/* <InkstoneLogoSVG className="headerLogoImage"/> */}
-                <img className="headerLogoImage" src={inkstoneLogoPNG} alt="Inkstone logo"/>
+                {props.useBWLogo ?
+                    <InkstoneLogoBWSVG className="headerLogoImage"/>
+                    :
+                    <img className="headerLogoImage" src={inkstoneLogoPNG} alt="Inkstone logo"/>
+                }
             </Link>
         </div>
     )
@@ -41,6 +57,7 @@ function ActionBar() {
 
 function RouterLinks() {
     const { t } = useTranslation(['header'])
+    // the router links contain highlighted services for quick access
     return (
         <div className="headerRouterLinks">
             <nav>

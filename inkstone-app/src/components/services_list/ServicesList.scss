@@ -1,0 +1,53 @@
+@import '../../base.scss';
+
+.servicesListComponent {
+    display: flex;
+    flex-direction: column;
+    font: $standard-font;
+    color: $text-purple;
+    .servicesListItems {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            color: $text-purple;
+            width: 33.33%;
+            @media (max-width: 800px) {
+                width: 50%
+            }
+            @media (max-width: 600px) {
+                width: 100%
+            }
+            &:hover {
+                background-color: $greyscale1;
+            }
+            .servicesListItemBox {
+                .servicesListItem {
+                    display: flex;
+                    flex-direction: row ;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    .servicesListItemText {
+                        align-self: center;
+                        margin-left: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .servicesListSeeMore {
+        padding-left: 20px;
+        height: 16px;
+        font-size: 14px;
+        width: 100%;
+        text-decoration: none;
+        color: $text-purple;
+        &:hover {
+            background-color: $greyscale1;
+        }
+    }
+}

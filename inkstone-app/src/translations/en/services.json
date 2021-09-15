@@ -1,4 +1,14 @@
 {
+    "servicesList": {
+        "servicesListSeeMore": "See more...",
+        "servicesListItems": {
+            "english-conversation": "English Conversation",
+            "ielts-speaking": "IELTS Speaking",
+            "physics": "Physics Tutoring",
+            "maths": "Maths Tutoring",
+            "group-sessions": "Group Sessions"
+        }
+    },
     "ieltsSpeaking": {
         "ieltsSpeakingSignupButtonText": "Sign up now",
         "ieltsSpeakingWhatIsIelts": {

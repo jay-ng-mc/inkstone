@@ -1,4 +1,14 @@
 {
+    "servicesList": {
+        "servicesListSeeMore": "更多服务...",
+        "servicesListItems": {
+            "english-conversation": "英语对话练习",
+            "ielts-speaking": "IELTS 说话课程",
+            "physics": "物理补习",
+            "maths": "数学补习",
+            "group-sessions": "小组补课"
+        }
+    },
     "ieltsSpeaking": {
         "ieltsSpeakingSignupButtonText": "报名",
         "ieltsSpeakingWhatIsIelts": {

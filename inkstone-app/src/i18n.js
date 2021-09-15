@@ -50,7 +50,7 @@ i18n
             services: services_zh_CN,
             placeholder: placeholder_zh_CN,
             enroll: enroll_zh_CN
-        },
+        }
     }
   });
 

@@ -4,66 +4,86 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    .homeTopBanner{
-        background-color: $inkstone-purple;
-        font-family: $standard-font;
-        font-weight: $light-font-weight;
-        color: $pure-white;
-        padding: 8vw;
-        text-align: center;
-    
-        .homeTopBannerHeader {
-            text-align: center;
-            font-size: $header-font-size;
-            padding: 20px;
+    align-items: center;
+    position: relative;
+    background-color: $greyscale1;
+    .homeTopBannerContainer {
+        position: relative;
+        top: -76.05px; // extend the top banner into the header
+        background-color: #000000;
+        width: 100%;
+        margin-bottom: -76.05px;
+        .homeTopBannerBackground {
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            opacity: 0.7;
         }
-        .hr-custom {
-            border-top: 3px solid $pure-white;
-            border-bottom: 0px;
-            border-left: 0px;
-            border-right: 0px;
-            width: 5%;
-        }
-        .homeTopBannerText {
-            text-align: center;
-            font-size: $text-font-size;
-            padding: 20px;
-        }
-        .homeToServicesLink {
-            text-decoration: none;
+        .homeTopBanner{
+            position: relative;
+            margin-top: 76.05px;
+            z-index: 1;
+            font-family: $standard-font;
+            font-weight: $light-font-weight;
+            color: $pure-white;
+            padding: 8vw;
+            text-align: left;
+            .homeTopBannerHeader {
+                text-align: left;
+                font-size: $header-font-size;
+                padding: 20px;
+            }
+            .homeToServicesLink {
+                text-decoration: none;
+            }
         }
     }
-    
+
     .homeTeamBanner {
         width: 100%;
         align-self: center;
     }
 
-    .homePageContent {
-        font-family: $standard-font;
-        width: 60vw;
-        min-width: 300px;
-        align-self: center;
-        margin: 50px;
-
-        .homePageContentHeader {
-            text-align: center;
-            font-size: $header-font-size;
-            font-weight: $bold-font-weight;
-            color: $inkstone-purple;
-            padding: 20px;
-        }
-        .homePageContentText {
-            text-align: center;
-            font-size: $text-font-size;
-            font-weight: $standard-font-weight;
-            color: $text-purple;
-            line-height: 150%;
-            p {
-                margin-top: 0;
-                margin-bottom: 20px;
+    .homePageContentBox {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 1vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        max-width: 900px;
+        background-color: $pure-white;
+        .homeWhatWeDo {
+            font-family: $standard-font;
+            width: 60vw;
+            min-width: 300px;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            .homeWhatWeDoHeader {
+                text-align: center;
+                font-size: $header-font-size;
+                font-weight: $bold-font-weight;
+                color: $inkstone-purple;
+                padding: 20px;
+            }
+            .homeWhatWeDoText {
+                text-align: center;
+                font-size: $text-font-size;
+                font-weight: $standard-font-weight;
+                color: $text-purple;
+                line-height: 150%;
+                p {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
             }
         }
+        
     }
 }
