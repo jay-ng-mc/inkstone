@@ -3,12 +3,13 @@ import {
     Link
 } from 'react-router-dom';
 import InvertedButton from '../../components/button/InvertedButton'
+import ServicesList from '../../components/services_list/ServicesList';
 import './Home.scss'
 
 // images
 import teamBannerBW from '../../images/teamBannerBW.png'
 import topBannerBG from '../../images/homePageBackgroundSmall.png'
-import ServicesList from '../../components/services_list/ServicesList';
+import inkstoneTeamMapImage from '../../images/inkstoneTeamMap.png'
 
 function Home() {
     const { t } = useTranslation(['home'])
@@ -17,6 +18,7 @@ function Home() {
             <TopBannerContainer t={t}/>
             <img className="homeTeamBanner" src={teamBannerBW} alt="Inkstone Team Members Banner"/>
             <HomePageContent t={t}/>
+            <PromoContent t={t}/>
         </div>
     )
 }
@@ -62,6 +64,45 @@ function HomePageContent(props: any) {
             <WhatWeDo t={props.t}/>
         </div>
     )
+}
+
+function PromoContent(props: any) {
+    const t = props.t
+    return (
+        <div className="homePagePromoContent">
+            <div className="homePagePromoContentHeader">
+                {t('homePromoContent.header')}
+            </div>
+            <div className="homePagePromoContentFlexBox">
+                <PromoContentSection t={t} k='homePromoInternational'/>
+                <PromoContentSection t={t} k='homePromoStudents'/>
+                <PromoContentSection t={t} k='homePromoExperienced'/>
+                <PromoContentSection t={t} k='homePromoQuality'/>
+            </div>
+            <img className="homePagePromoContentInkstoneTeamMap"
+            src={inkstoneTeamMapImage} alt="Inkstone Team Map"/>
+        </div>
+    )
+
+    function PromoContentSection(props: PromoContentSectionType) {
+        const t = props.t
+        return (
+            <div className="homePagePromoContentSection">
+                <img className="homePagePromoContentSectionIcon" alt={props.k} src={require(`../../images/home/${props.k}.svg`).default}/>
+                <div className="homePagePromoContentSectionHeader">
+                    {t(`homePromoContent.${props.k}.header`)}
+                </div>
+                <div className="homePagePromoContentSectionText">
+                    {t(`homePromoContent.${props.k}.text`)}
+                </div>
+            </div>
+        )
+    }
+
+    type PromoContentSectionType = {
+        t: (Function: string) => string,
+        k: string
+    }
 }
 
 export default Home

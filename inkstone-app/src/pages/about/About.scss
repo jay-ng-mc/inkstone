@@ -3,10 +3,7 @@
     background-color: $greyscale1;
     font-family: $standard-font;
     .aboutTeamHeader {
-        font-size: $header-font-size;
-        font-weight: $bold-font-weight;
-        color: $inkstone-purple;
-        text-align: center;
+        @include standardHeaderTemplate();
         padding-top: 4vw;
     }
     .aboutTeamMemberGrid {

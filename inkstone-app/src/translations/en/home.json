@@ -9,5 +9,24 @@
             "line1": "Academic English competency is critical in university and careers. Inkstone offers courses and writing assistance to enable learners to use English more like native users.",
             "line2": "Inkstone's teaching team fully comprises of native English speakers and experienced private tutors. Our clients have achieved top scores in IELTS, TOEFL, SAT, IB and A-level examinations. We have worked with international adult professionals in the business, tourism and security industries."
         }
+    },
+    "homePromoContent": {
+        "header": "Our specialities",
+        "homePromoInternational": {
+            "header": "The world is your oyster",
+            "text": "Our home grown team of teachers from Macau are now based in Europe, North America, Asia, and Oceania, bringing you the proper international English experience."
+        },
+        "homePromoStudents": {
+            "header": "Young teachers for young students",
+            "text": "Our tutors are based in top universities across the world with different specializations, helping us relate to diverse students."
+        },
+        "homePromoExperienced": {
+            "header": "Experienced teachers",
+            "text": "Our tutors have 3-7 years of one-to-one teaching experience in various subjects."
+        },
+        "homePromoQuality": {
+            "header": "Quality assurance",
+            "text": "We work closely with our tutors to ensure top performance."
+        }
     }
 }

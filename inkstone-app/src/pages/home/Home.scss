@@ -55,6 +55,7 @@
         padding-top: 1vw;
         margin-top: 3vw;
         margin-bottom: 3vw;
+        width: 100%;
         max-width: 900px;
         background-color: $pure-white;
         .homeWhatWeDo {
@@ -66,18 +67,10 @@
             margin-right: auto;
     
             .homeWhatWeDoHeader {
-                text-align: center;
-                font-size: $header-font-size;
-                font-weight: $bold-font-weight;
-                color: $inkstone-purple;
-                padding: 20px;
+                @include standardHeaderTemplate();
             }
             .homeWhatWeDoText {
-                text-align: center;
-                font-size: $text-font-size;
-                font-weight: $standard-font-weight;
-                color: $text-purple;
-                line-height: 150%;
+                @include standardTextBlockTemplate();
                 p {
                     margin-top: 0;
                     margin-bottom: 20px;
@@ -85,5 +78,49 @@
             }
         }
         
+    }
+
+    .homePagePromoContent {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        max-width: 900px;
+        background-color: $pure-white;
+        text-align: center;
+        .homePagePromoContentHeader {
+            @include standardHeaderTemplate();
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+        }
+        .homePagePromoContentFlexBox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .homePagePromoContentSection {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+                max-width: 400px;
+                position: relative;
+                .homePagePromoContentSectionIcon {
+                    position: relative;
+                    top: -10px;
+                    margin-bottom: -30px;
+                }
+                .homePagePromoContentSectionHeader {
+                    @include standardHeaderTemplate();
+                    color: $text-purple;
+                    font-size: $button-font-size;
+                }
+                .homePagePromoContentSectionText {
+                    @include standardTextBlockTemplate();
+                    margin: auto;
+                }
+            }
+        }
+        .homePagePromoContentInkstoneTeamMap {
+            width: 60vw;
+        }
     }
 }

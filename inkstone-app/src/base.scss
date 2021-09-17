@@ -26,14 +26,32 @@ $disabled-text: $greyscale3;
 // standard fonts
 $standard-font: 'Open Sans', 'Noto Sans SC', sans-serif;
 $light-font-weight: 300;
-$standard-font-weight: 399; // rouned to 400 for open sans, rounded to 300 for noto sans sc
-$bold-font-weight: 500; // rounded to 600 for open sans, stay at 500 for noto sans sc
+$standard-font-weight: 400;
+$bold-font-weight: 600; // rounded to 600 for open sans, stay at 500 for noto sans sc
 $extra-bold-font-weight: 700;
 $header-font-size: calc(min(max(4vw, 25px), 40px));
 $text-font-size: calc(min(max(2vw, 13px), 16px));
 $button-font-size: calc(min(max(2vw, 18px), 24px));
 
-@mixin generalFontTemplate {
+@mixin removeHyperlinkFormatting {
     color: $text-purple;
     text-decoration: none;
+}
+
+@mixin standardHeaderTemplate {
+    font-family: $standard-font;
+    font-weight: $bold-font-weight;
+    color: $inkstone-purple;
+    font-size: $header-font-size;
+    margin: 20px;
+    text-align: center;
+}
+
+@mixin standardTextBlockTemplate {
+    font-family: $standard-font;
+    font-weight: $standard-font-weight;
+    color: $text-purple;
+    font-size: $text-font-size;
+    text-align: center;
+    line-height: 1.5;
 }
