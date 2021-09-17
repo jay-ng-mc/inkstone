@@ -3,18 +3,31 @@ import {
     Link
 } from 'react-router-dom';
 import InvertedButton from '../../components/button/InvertedButton'
+import ServicesList from '../../components/services_list/ServicesList';
 import './Home.scss'
 
 // images
 import teamBannerBW from '../../images/teamBannerBW.png'
+import topBannerBG from '../../images/homePageBackgroundSmall.png'
+import inkstoneTeamMapImage from '../../images/inkstoneTeamMap.png'
 
 function Home() {
     const { t } = useTranslation(['home'])
     return (
         <div className="homePage">
-            <TopBanner t={t}/>
+            <TopBannerContainer t={t}/>
             <img className="homeTeamBanner" src={teamBannerBW} alt="Inkstone Team Members Banner"/>
             <HomePageContent t={t}/>
+            <PromoContent t={t}/>
+        </div>
+    )
+}
+
+function TopBannerContainer(props: any) {
+    return (
+        <div className="homeTopBannerContainer">
+            <img className="homeTopBannerBackground" src={topBannerBG} alt="."/>
+            <TopBanner t={props.t}/>
         </div>
     )
 }
@@ -24,8 +37,6 @@ function TopBanner(props: any) {
     return (
         <div className="homeTopBanner">
             <div className="homeTopBannerHeader">{t('homeTopBanner.header')}</div>
-            <hr className="hr-custom"></hr>
-            <div className="homeTopBannerText">{t('homeTopBanner.text')}</div>
             <Link to="ielts-speaking" className="homeToServicesLink">
                 <InvertedButton buttonName="homeToServicesButton" buttonText={t('homeTopBanner.buttonText')} buttonIcon={true}/>
             </Link>
@@ -33,17 +44,65 @@ function TopBanner(props: any) {
     )
 }
 
-function HomePageContent(props: any) {
+function WhatWeDo(props: any) {
     const t = props.t
     return (
-        <div className="homePageContent">
-            <div className="homePageContentHeader">{t('homePageContent.header')}</div>
-            <div className="homePageContentText">
-                <p>{t('homePageContent.text.line1')}</p>
-                <p>{t('homePageContent.text.line2')}</p>
+        <div className="homeWhatWeDo">
+            <div className="homeWhatWeDoHeader">{t('homeWhatWeDo.header')}</div>
+            <div className="homeWhatWeDoText">
+                <p>{t('homeWhatWeDo.text.line1')}</p>
+                <p>{t('homeWhatWeDo.text.line2')}</p>
             </div>
         </div>
     )
+}
+
+function HomePageContent(props: any) {
+    return (
+        <div className="homePageContentBox">
+            <ServicesList/>
+            <WhatWeDo t={props.t}/>
+        </div>
+    )
+}
+
+function PromoContent(props: any) {
+    const t = props.t
+    return (
+        <div className="homePagePromoContent">
+            <div className="homePagePromoContentHeader">
+                {t('homePromoContent.header')}
+            </div>
+            <div className="homePagePromoContentFlexBox">
+                <PromoContentSection t={t} k='homePromoInternational'/>
+                <PromoContentSection t={t} k='homePromoStudents'/>
+                <PromoContentSection t={t} k='homePromoExperienced'/>
+                <PromoContentSection t={t} k='homePromoQuality'/>
+            </div>
+            <img className="homePagePromoContentInkstoneTeamMap"
+            src={inkstoneTeamMapImage} alt="Inkstone Team Map"/>
+        </div>
+    )
+
+    function PromoContentSection(props: PromoContentSectionType) {
+        const t = props.t
+        return (
+            <div className="homePagePromoContentSection">
+                <img className="homePagePromoContentSectionIcon" alt={props.k} src={require(`../../images/home/${props.k}.svg`).default}/>
+                <div className="homePagePromoContentSectionHeader">
+                    {t(`homePromoContent.${props.k}.header`)}
+                </div>
+                <div className="homePagePromoContentSectionText">
+                    {t(`homePromoContent.${props.k}.text`)}
+                </div>
+            </div>
+        )
+    }
+
+    type PromoContentSectionType = {
+        t: (Function: string) => string,
+        k: string
+    }
 }
 
 export default Home

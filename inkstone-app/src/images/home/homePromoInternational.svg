@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#904989;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path929"
+       cx="6.2248769"
+       cy="6.4751229"
+       rx="4.0352216"
+       ry="3.5660095" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 2.502463,4.8485221 C 5.4428569,5.5992609 9.8221672,4.8172412 9.8221672,4.8172412"
+       id="path1264" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 2.6323217,7.9523261 C 5.5727156,8.7030649 9.952026,7.9210452 9.952026,7.9210452"
+       id="path1264-6" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 4.097783,3.5347288 C 2.2209359,6.3812805 4.0541805,9.45131 4.0541805,9.45131"
+       id="path1752" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 8.2626483,3.6444538 c 1.8768467,2.8465516 0.043603,5.9165811 0.043603,5.9165811"
+       id="path1752-0" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 5.4741378,2.9091133 C 4.1916254,6.7253693 5.4115763,10.041133 5.4115763,10.041133"
+       id="path1822" />
+    <path
+       style="fill:none;stroke:#904989;stroke-width:0.26458333;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 6.8199944,2.9542658 c 0.8033745,3.816256 0.039189,7.1320202 0.039189,7.1320202"
+       id="path1822-9" />
+  </g>
+</svg>
