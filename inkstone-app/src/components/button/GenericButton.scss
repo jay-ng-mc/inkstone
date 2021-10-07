@@ -6,11 +6,14 @@
     background-color: $inkstone-purple;
     color: $pure-white;
     g{
-        fill: white;
+        fill: $pure-white;
     }
 
     &:hover {
-        background-color: $highlight-purple
+        background-color: $highlight-purple;
+        g {
+            fill: $pure-white;
+        }
     }
     &:disabled {
         background-color: $disabled-bg;
