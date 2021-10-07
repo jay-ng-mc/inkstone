@@ -31,13 +31,13 @@ function ServicesListItem(props: ServicesListItemProps) {
     )
 }
 
-function ServicesListSeeMore(props: {t: any}) {
-    return(
-        <Link to="services" className="servicesListSeeMore">
-                {props.t('servicesList.servicesListSeeMore')}
-        </Link>
-    )
-}
+// function ServicesListSeeMore(props: {t: any}) {
+//     return(
+//         <Link to="services" className="servicesListSeeMore">
+//                 {props.t('servicesList.servicesListSeeMore')}
+//         </Link>
+//     )
+// }
 
 type ServicesListItemProps = {
     k: string, // key of serviceItem in the json object
