@@ -10,6 +10,14 @@ import './Home.scss'
 import teamBannerBW from '../../images/teamBannerBW.png'
 import topBannerBG from '../../images/homePageBackgroundSmall.png'
 import inkstoneTeamMapImage from '../../images/inkstoneTeamMap.png'
+import howItWorksStep1 from '../../images/home/homeHowItWorksStep1.svg'
+import howItWorksStep2 from '../../images/home/homeHowItWorksStep2.svg'
+
+type TranslateFunc = (Function: string) => string
+type PromoContentSectionType = {
+    t: TranslateFunc,
+    k: string
+}
 
 function Home() {
     const { t } = useTranslation(['home'])
@@ -19,11 +27,12 @@ function Home() {
             <img className="homeTeamBanner" src={teamBannerBW} alt="Inkstone Team Members Banner"/>
             <HomePageContent t={t}/>
             <PromoContent t={t}/>
+            <HowItWorks t={t}/>
         </div>
     )
 }
 
-function TopBannerContainer(props: any) {
+function TopBannerContainer(props: {t: TranslateFunc}) {
     return (
         <div className="homeTopBannerContainer">
             <img className="homeTopBannerBackground" src={topBannerBG} alt="."/>
@@ -32,7 +41,7 @@ function TopBannerContainer(props: any) {
     )
 }
 
-function TopBanner(props: any) {
+function TopBanner(props: {t: TranslateFunc}) {
     const t = props.t // receive the translate function from parent
     return (
         <div className="homeTopBanner">
@@ -44,7 +53,7 @@ function TopBanner(props: any) {
     )
 }
 
-function WhatWeDo(props: any) {
+function WhatWeDo(props: {t: TranslateFunc}) {
     const t = props.t
     return (
         <div className="homeWhatWeDo">
@@ -57,7 +66,7 @@ function WhatWeDo(props: any) {
     )
 }
 
-function HomePageContent(props: any) {
+function HomePageContent(props: {t: TranslateFunc}) {
     return (
         <div className="homePageContentBox">
             <ServicesList/>
@@ -66,12 +75,12 @@ function HomePageContent(props: any) {
     )
 }
 
-function PromoContent(props: any) {
+function PromoContent(props: {t: TranslateFunc}) {
     const t = props.t
     return (
         <div className="homePagePromoContent">
             <div className="homePagePromoContentHeader">
-                {t('homePromoContent.header')}
+                {t('homePromoContent.homePromoHeader')}
             </div>
             <div className="homePagePromoContentFlexBox">
                 <PromoContentSection t={t} k='homePromoInternational'/>
@@ -98,11 +107,27 @@ function PromoContent(props: any) {
             </div>
         )
     }
+}
 
-    type PromoContentSectionType = {
-        t: (Function: string) => string,
-        k: string
-    }
+function HowItWorks(props: {t: TranslateFunc}) {
+    const t = props.t
+    return (
+        <div className="homePageHowItWorks">
+            <div className="homePageHowItWorksHeader">
+                {t('homeHowItWorks.header')}
+            </div>
+            <div className="homePageHowItWorksSteps">
+                <div className="homePageHowItWorksStep">
+                    <img src={howItWorksStep1} alt="1. "/>
+                    {t('homeHowItWorks.text1')}
+                </div>
+                <div className="homePageHowItWorksStep">
+                    <img src={howItWorksStep2} alt="2. "/>
+                    {t('homeHowItWorks.text2')}
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Home

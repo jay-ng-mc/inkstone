@@ -11,7 +11,7 @@
         }
     },
     "homePromoContent": {
-        "header": "Our specialities",
+        "homePromoHeader": "Our specialities",
         "homePromoInternational": {
             "header": "The world is your oyster",
             "text": "Our home grown team of teachers from Macau are now based in Europe, North America, Asia, and Oceania, bringing you the proper international English experience."
@@ -28,5 +28,10 @@
             "header": "Quality assurance",
             "text": "We work closely with our tutors to ensure top performance."
         }
+    },
+    "homeHowItWorks": {
+        "header": "How it works",
+        "text1": "Go to service page",
+        "text2": "Fill in sign up form if there is one, otherwise contact us directly via WeChat or Facebook using the links at the bottom of the page"
     }
 }
