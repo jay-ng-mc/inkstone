@@ -1,0 +1,105 @@
+@import '../../../base.scss';
+
+.header {
+    font: $standard-font;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    .headerContent, .headerContentBW {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        .headerLogo {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            .headerLogoImage {
+                height: auto;
+                width: calc(min(max(100px, 20vw), 200px));
+            }
+        }
+        .headerActionBar {
+            display: grid;
+            height: 5vw;
+            width: 100%;
+            max-height: 40px;
+            grid-template-columns: repeat(7, 1fr);
+            align-self: center;
+            .headerRouterLinks {
+                justify-self: center;
+                display: flex;
+                grid-column: 1 / 6;
+                align-items: center;
+                .headerRouterLinksList {
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 15px; // this prevents text wrapping from taking too much space on small screens
+                    li {
+                        display: inline;
+                        text-align: center;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        font-size: calc(min(max(1.5vw, 10px), 16px));
+                        a {
+                            text-decoration: none;
+                            color: $greyscale6;
+                            &:hover {
+                                color: $greyscale4;
+                            }
+                        }
+                    }
+                }
+            }
+            .languageSelector {
+                justify-self: flex-end;
+                grid-column-start: 6;
+                grid-column-end: 8;
+            }
+        }
+    }
+    .headerContentBW {
+        transition: background-color 100ms;
+        .headerActionBar .headerRouterLinks .headerRouterLinksList li a {
+            color: $pure-white;
+        }
+        &:hover {
+            background-color: $pure-white;
+            .headerActionBar .headerRouterLinks .headerRouterLinksList li a {
+                color: $greyscale6;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header{
+        .headerContent, .headerContentBW {
+            .headerActionBar {
+                .headerRouterLinks {
+                    grid-column: 1 / 8;
+                    .headerRouterLinksList {
+                        li {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+                .languageSelector {
+                    grid-column: 8 / 9;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        .headerContent, .headerContentBW {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

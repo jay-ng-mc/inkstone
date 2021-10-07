@@ -1,4 +1,15 @@
 {
+    "servicesList": {
+        "servicesListSeeMore": "更多服务...",
+        "servicesListItems": {
+            "english-conversation": "英语对话练习",
+            "ielts-speaking": "IELTS 说话课程",
+            "essay-clinic": "论文写作坊",
+            "physics": "物理补习",
+            "maths": "数学补习",
+            "group-sessions": "小组补课"
+        }
+    },
     "ieltsSpeaking": {
         "ieltsSpeakingSignupButtonText": "报名",
         "ieltsSpeakingWhatIsIelts": {
@@ -8,7 +19,23 @@
         "ieltsSpeakingCurriculumOverviewHeader": "课程大纲"
     },
     "essayClinic": {
-        "header": "論文寫作工作坊",
+        "header": "论文写作工作坊",
         "text": "我们的英语母语教师可以就任何论文或文章为您提供专业的校订和反馈。在这个40分钟的工作坊里，我们的教师可以与您现场讨论如何让您的文法更上一层楼。预约时间请发信息给我们的脸书页面或者微信公众号。"
+    },
+    "englishConversation": {
+        "header": "英语聊天室，补习",
+        "text": "我们的英语母语教师在各个时区透过网上视像对话帮助您加强英语水平。我们主要专注于知识性的对话，包括科技、环境、媒体等的主题。为正在读书的学生，导师们也可以在功课方面指导。"
+    },
+    "physicsTutoring": {
+        "header": "网上物理补习",
+        "text": "我们的国际教师是澳门联国学校的优异毕业生，全部获得了IB国际文凭。现在我们都就读世界各地的顶尖大学。我们的教学系统是一个近似于IB的有挑战性的系统，专注于让学生本质性地了解物理知识并且达到国际认可的水品，为学生日后就读世界顶尖大学做准备。"
+    },
+    "mathsTutoring": {
+        "header": "网上数学补习",
+        "text": "我们的国际教师是澳门联国学校的优异毕业生，全部获得了IB国际文凭。现在我们都就读世界各地的顶尖大学。我们的教学系统是一个近似于IB的有挑战性的系统，专注于让学生本质性地了解数学并且达到国际认可的水品，为学生日后就读世界顶尖大学做准备。"
+    },
+    "groupSessions": {
+        "header": "网上小组补习",
+        "text": "我们较年轻的导师（澳门联国学校新毕业生）为小学和初中学生解释学校一般课程难点并且指导功课。"
     }
 }

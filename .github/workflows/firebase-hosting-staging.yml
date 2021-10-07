@@ -2,13 +2,13 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting preview on merge to staging branch
-'on':
+on:
   push:
     branches:
       - staging
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest

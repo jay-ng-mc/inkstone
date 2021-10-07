@@ -5,6 +5,7 @@ import fb_icon from '../../images/fb_icon.png'
 import linkedin_icon from '../../images/linkedin_icon.png'
 import wechatID_icon from '../../images/wechatID_icon.png'
 import wechatQR_icon from '../../images/wechatQR_icon.png'
+import Popup from 'reactjs-popup'
 
 export default function Footer() {
     return (
@@ -20,8 +21,21 @@ function InkstoneOutlinks() {
         <div className="footerInkstoneOutlinks">
             <a href="https://www.facebook.com/inkstone.edu"><img className="footerSocialMediaOutlinkIcon" alt="fb_link" src={fb_icon}/></a>
             <a href="https://www.linkedin.com/company/inkstone-llc/"><img className="footerSocialMediaOutlinkIcon" alt="linkedin" src={linkedin_icon}/></a>
-            <img className="footerWechatID" alt="wechat_id" src={wechatID_icon}/>
-            <img className="footerWechatQR" alt="wechat_qr" src={wechatQR_icon}/>
+            <Popup
+            trigger={
+                <div className="footerWechatLinks">
+                    <img className="footerWechatID" alt="wechat_id" src={wechatID_icon}/>
+                    <img className="footerWechatQR" alt="wechat_qr" src={wechatQR_icon}/>
+                </div>
+            }
+            on="click"
+            closeOnDocumentClick
+            modal={true}
+            arrow={false}>
+                <div className="footerWechatPopupBox">
+                    <img className="footerWechatPopupQR" src={wechatQR_icon} alt="Broken WeChat QR code"/>
+                </div>
+            </Popup>
         </div>
     )
 }

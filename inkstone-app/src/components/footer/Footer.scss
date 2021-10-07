@@ -17,17 +17,45 @@
             height: 20px;
             width: 20px;
         }
-        .footerWechatID {
-            height: 30px;
-            width: auto;
-        }
-        .footerWechatQR {
-            height: 60px;
-            width: 60px;
+        .footerWechatLinks {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            &:hover {
+                cursor: pointer;
+            }
+            .footerWechatID {
+                height: 30px;
+                width: auto;
+                margin-right: 10px;
+            }
+            .footerWechatQR {
+                height: 60px;
+                width: 60px;
+            }
         }
     }
     .footerCopyrightText {
         margin-top: 10px;
         color: $greyscale4;
+    }
+}
+
+// from footerWeChatId
+#popup-root{
+    .popup-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        .footerWechatPopupBox{
+            display: flex;
+            width: calc(min(400px, 80vw));
+            height: calc(min(400px, 80vw));
+            align-items: center;
+            justify-items: center;
+            .footerWechatPopupQR{
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 }

@@ -1,12 +1,7 @@
-import { useTranslation } from "react-i18next"
-import './EssayClinic.scss'
+import GenericServicePage from "../../components/generic_service_page/GenercServicePage";
 
 export default function EssayClinic() {
-    const { t } = useTranslation('services')
     return (
-        <div className="essayClinic">
-            <div className="essayClinicHeader">{t('essayClinic.header')}</div>
-            <div className="essayClinicText">{t('essayClinic.text')}</div>
-        </div>
+        <GenericServicePage pageName={'essayClinic'}/>
     )
 }
