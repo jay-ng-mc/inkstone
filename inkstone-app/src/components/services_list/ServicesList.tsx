@@ -13,7 +13,7 @@ export default function ServicesList() {
                     services_list.map(e => <ServicesListItem key={e[0]} k={e[0]} t={t}/>)
                 }
             </div>
-            <ServicesListSeeMore t={t}/>
+            {/* <ServicesListSeeMore t={t}/> */}
         </div>
     )
 }
