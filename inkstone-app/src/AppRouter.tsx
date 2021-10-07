@@ -24,7 +24,7 @@ export default function RouterPanel() {
           <Route exact path="/" component={Home}/>
           <Route path="/enroll" component={Enroll}/>
           <Route path="/ielts-speaking" component={IeltsSpeaking}/>
-          <Route path="/writing-service" component={Placeholder}/>
+          {/* <Route path="/writing-service" component={Placeholder}/> */}
           <Route path="/essay-clinic" component={EssayClinic}/>
           <Route path="/about" component={About}/>
           <Route component={Placeholder}/>

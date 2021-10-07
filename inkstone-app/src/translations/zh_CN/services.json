@@ -4,6 +4,7 @@
         "servicesListItems": {
             "english-conversation": "英语对话练习",
             "ielts-speaking": "IELTS 说话课程",
+            "essay-clinic": "论文写作坊",
             "physics": "物理补习",
             "maths": "数学补习",
             "group-sessions": "小组补课"
@@ -18,7 +19,7 @@
         "ieltsSpeakingCurriculumOverviewHeader": "课程大纲"
     },
     "essayClinic": {
-        "header": "論文寫作工作坊",
+        "header": "论文写作工作坊",
         "text": "我们的英语母语教师可以就任何论文或文章为您提供专业的校订和反馈。在这个40分钟的工作坊里，我们的教师可以与您现场讨论如何让您的文法更上一层楼。预约时间请发信息给我们的脸书页面或者微信公众号。"
     }
 }
