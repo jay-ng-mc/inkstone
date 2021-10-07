@@ -1,5 +1,5 @@
 name: Only allow pull requests to master from staging
-'on':
+on:
   pull_request:
     branches:
       - master
