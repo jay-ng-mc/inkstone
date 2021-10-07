@@ -22,7 +22,12 @@ function InkstoneOutlinks() {
             <a href="https://www.facebook.com/inkstone.edu"><img className="footerSocialMediaOutlinkIcon" alt="fb_link" src={fb_icon}/></a>
             <a href="https://www.linkedin.com/company/inkstone-llc/"><img className="footerSocialMediaOutlinkIcon" alt="linkedin" src={linkedin_icon}/></a>
             <Popup
-            trigger={<img className="footerWechatID" alt="wechat_id" src={wechatID_icon}/>}
+            trigger={
+                <div className="footerWechatLinks">
+                    <img className="footerWechatID" alt="wechat_id" src={wechatID_icon}/>
+                    <img className="footerWechatQR" alt="wechat_qr" src={wechatQR_icon}/>
+                </div>
+            }
             on="click"
             closeOnDocumentClick
             modal={true}
@@ -31,7 +36,6 @@ function InkstoneOutlinks() {
                     <img className="footerWechatPopupQR" src={wechatQR_icon} alt="Broken WeChat QR code"/>
                 </div>
             </Popup>
-            <img className="footerWechatQR" alt="wechat_qr" src={wechatQR_icon}/>
         </div>
     )
 }
