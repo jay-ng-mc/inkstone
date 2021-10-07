@@ -21,5 +21,21 @@
     "essayClinic": {
         "header": "Essay Writing Clinic",
         "text": "Our native English teachers provide top notch feedback on your essays. Bring in your work for a 40 minute live consultation. Reservations via messenger on our Facebook page or via WeChat."
+    },
+    "englishConversation": {
+        "header": "Conversational English, Tutoring",
+        "text": "Our native English teachers are available across different time zones to help you work on your English ability through video conversation. We cover a variety of hot button topics that prepare you for intellectual conversation, such as technology, environment, and media. For students in school, our teachers also help with homework."
+    },
+    "physicsTutoring": {
+        "header": "Online Physics Tutoring",
+        "text": "Our international teachers are the best alumni of School of the Nations (Macau), have gone through the elite International Baccalaureate (IB) program, and study in prestigious universities around the world. We teach a challenging curriculum that closely follows the IB system, which emphasizes fundamental understanding of concepts and achieving rigorous international standards to best prepare students for top universities."
+    },
+    "mathsTutoring": {
+        "header": "Online Maths Tutoring",
+        "text": "Our international teachers are the best alumni of School of the Nations (Macau), have gone through the elite International Baccalaureate (IB) program, and study in prestigious universities around the world. We teach a challenging curriculum that closely follows the IB system, which emphasizes fundamental understanding of concepts and achieving rigorous international standards to best prepare students for top universities."
+    },
+    "groupSessions": {
+        "header": "Online Group Sessions",
+        "text": "Our younger tutors graduating soon from the School of the Nations (Macau) help small groups of primary school and early secondary school students with any issues in their normal school curriculum and in their homework."
     }
 }

@@ -1,7 +1,7 @@
 import GenericServicePage from "../../components/generic_service_page/GenercServicePage";
 
-export default function EssayClinic() {
+export default function EnglishConversation() {
     return (
-        <GenericServicePage pageName={'essayClinic'}/>
+        <GenericServicePage pageName={'englishConversation'}/>
     )
 }

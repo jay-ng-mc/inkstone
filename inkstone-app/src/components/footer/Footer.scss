@@ -31,3 +31,21 @@
         color: $greyscale4;
     }
 }
+
+// from footerWeChatId
+#popup-root{
+    .popup-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        .footerWechatPopupBox{
+            display: flex;
+            width: calc(min(400px, 80vw));
+            height: calc(min(400px, 80vw));
+            align-items: center;
+            justify-items: center;
+            .footerWechatPopupQR{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

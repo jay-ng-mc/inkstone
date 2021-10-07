@@ -13,6 +13,10 @@ import IeltsSpeaking from './pages/services/IeltsSpeaking';
 import EssayClinic from './pages/services/EssayClinic';
 import './AppRouter.scss'
 import Enroll from './pages/enroll/Enroll';
+import EnglishConversation from './pages/services/EnglishConversation';
+import MathsTutoring from './pages/services/MathsTutoring';
+import PhysicsTutoring from './pages/services/PhysicsTutoring';
+import GroupSessions from './pages/services/GroupSessions';
 
 export default function RouterPanel() {
   return (
@@ -24,6 +28,10 @@ export default function RouterPanel() {
           <Route exact path="/" component={Home}/>
           <Route path="/enroll" component={Enroll}/>
           <Route path="/ielts-speaking" component={IeltsSpeaking}/>
+          <Route path="/english-conversation" component={EnglishConversation}/>
+          <Route path="/maths" component={MathsTutoring}/>
+          <Route path="/physics" component={PhysicsTutoring}/>
+          <Route path="/group-sessions" component={GroupSessions}/>
           {/* <Route path="/writing-service" component={Placeholder}/> */}
           <Route path="/essay-clinic" component={EssayClinic}/>
           <Route path="/about" component={About}/>

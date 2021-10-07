@@ -1,14 +1,15 @@
 @import '../../base.scss';
 
-.essayClinic {
+.genericServicePage {
     display: flex;
     flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
-    .essayClinicHeader {
+    align-items: center;
+    .genericServicePageHeader {
         @include standardHeaderTemplate();
     }
-    .essayClinicText {
+    .genericServicePageText {
         @include standardTextBlockTemplate();
         width: 90vw;
         max-width: 700px;
