@@ -12,5 +12,8 @@
     &:hover {
         background-color: $highlight-purple;
         color: $pure-white;
+        g {
+            fill: $pure-white;
+        }
     }
 }
