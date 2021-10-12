@@ -1,5 +1,4 @@
 import i18n from 'i18next';
-// import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
@@ -18,16 +17,13 @@ import enroll_en from './translations/en/enroll.json'
 import enroll_zh_CN from './translations/zh_CN/enroll.json'
 
 i18n
-  // load translation using http -> see /public/locales
-  // learn more: https://github.com/i18next/i18next-http-backend
-//   .use(Backend)
+  // pass the i18n instance to react-i18next.
+  // init i18next
+  // for all options read: https://www.i18next.com/overview/configuration-options
+  .use(initReactI18next)
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
   .use(LanguageDetector)
-  // pass the i18n instance to react-i18next.
-  .use(initReactI18next)
-  // init i18next
-  // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     fallbackLng: 'en',
     debug: true,
@@ -53,5 +49,8 @@ i18n
         }
     }
   });
+
+// necessary to convert language format of LanguageDetector to format of i18n
+i18n.changeLanguage(i18n.language.replace('-','_')); 
 
 export default i18n;
