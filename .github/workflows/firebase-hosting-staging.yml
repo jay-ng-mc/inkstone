@@ -23,7 +23,7 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INKSTONE_SITE }}'
-          channelId: preview
+          channelId: preview-${{ github.head_ref }}
           projectId: inkstone-site
           entryPoint: "./inkstone-app"
 
