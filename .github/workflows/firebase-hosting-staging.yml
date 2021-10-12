@@ -8,6 +8,7 @@ on:
       - staging
   pull_request:
     branches:
+      - staging
       - master
 jobs:
   build_and_preview:
