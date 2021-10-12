@@ -13,18 +13,10 @@ export default function LanguageSelector() {
     )
 }
 
-class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}> {
-    state = {lang:'en'}
-
-    componentDidMount() {
-        this.setState({
-            lang: this.props.i18n.language // update component state with current localization stored in i18n
-        })
-    }
+class LanguageSelectorClass extends React.Component<{i18n: any}> {
 
     changeLanguage = (l: string) => {
         this.props.i18n.changeLanguage(l) // update i18n language
-        this.setState({lang: l}) // update component's language variable
     }
 
     render() {
@@ -33,7 +25,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 <button 
                 className="languageSelectorButton"
                 type="button" 
-                disabled={this.state.lang === 'en'} 
+                disabled={this.props.i18n.language === 'en'} 
                 onClick={() => this.changeLanguage('en')}>
                     <span className="languageSelectorButtonText">English</span>
                     <img className="buttonIcon" src={flag_GB} alt="EN"/>
@@ -41,7 +33,7 @@ class LanguageSelectorClass extends React.Component<{i18n: any}, {lang: string}>
                 <button 
                 className="languageSelectorButton"
                 type="button" 
-                disabled={this.state.lang === 'zh_CN'} 
+                disabled={this.props.i18n.language === 'zh_CN'} 
                 onClick={() => this.changeLanguage('zh_CN')}>
                     <span className="languageSelectorButtonText">简体中文</span>
                     <img className="buttonIcon" src={flag_CN} alt="CN"/>
