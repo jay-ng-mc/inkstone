@@ -1,12 +1,7 @@
 {
     "headerRouterLinks": {
-        "home": "主页",
         "about": "关于我们",
-        "services": "服务项目"
-    },
-    "headerRouterServicesDropdownOptions": {
         "ielts-speaking": "IELTS 说话课程",
-        "writing-service": "文书服务",
-        "essay-clinic": "论文写作工作坊"
+        "tutoring": "补习"
     }
 }

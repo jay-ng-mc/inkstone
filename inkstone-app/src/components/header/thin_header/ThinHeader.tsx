@@ -63,18 +63,13 @@ function RouterLinks() {
             <nav>
             <ul className="headerRouterLinksList">
                 <li>
-                    <Link to="ielts-speaking">
-                        {t('headerRouterServicesDropdownOptions.ielts-speaking')}
+                    <Link to="/ielts-speaking">
+                        {t('headerRouterLinks.ielts-speaking')}
                     </Link>
                 </li>
-                {/* <li>
-                    <Link to="writing-service">
-                        {t('headerRouterServicesDropdownOptions.writing-service')}
-                    </Link>
-                </li> */}
                 <li>
-                    <Link to="essay-clinic">
-                        {t('headerRouterServicesDropdownOptions.essay-clinic')}
+                    <Link to="/tutoring">
+                        {t('headerRouterLinks.tutoring')}
                     </Link>
                 </li>
                 <li>

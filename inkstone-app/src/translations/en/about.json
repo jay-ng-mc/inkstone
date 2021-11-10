@@ -1,31 +1,47 @@
 {
     "aboutTeam": {
-        "aboutFounders": {
-            "aboutFoundersNames": {
-                "thomasName": "Thomas Sayers",
-                "jayName": "Jay Ng"
-            },
-            "aboutFoundersDescriptions": {
-                "thomasDesc": " is a Master of Marketing candidate at the University of Auckland (New Zealand) with an undergraduate background in political science and international relations, media and communication and Chinese. He has 6 years of private tutoring experience and works one-on-one with international adult professionals to assist them with English language learning.  He graduated from the School of the Nations with an International Baccalaureate (IB) diploma in 2017.",
-                "jayDesc": " is a computer science graduate from Nanyang Technological University, Singapore. He is a native English speaker with seven years of private tutoring experience. He grew up in Macau (China), attending international school and graduating top of the class with an International Baccalaureate (IB) diploma. He completed part of his bachelor degree at the University of Melbourne (Australia), and worked at a tech startup in Montpellier (France). He now pursues a master's degree in artificial intelligence and data science at the Institut Polytechnique de Paris."
-            }
-        },
+        "aboutUs": "Our company is built for and by young tutors. We provide the best English medium tutoring in Macau, and we aim to make you talk and think like a native. All of our teachers are native English speakers with years of experience particularly in one-to-one tutoring. Our international teachers have all graduated from the elite IB program at School of the Nations in Macau.",
         "aboutMembers": {
-            "aboutMembersNames": {
-                "sophieName": "Sophie Wagle",
-                "sashaName": "Sasha Arnett",
-                "xavierName": "Xavier Kong",
-                "miaName": "Mia Alvarez"
+            "thomas": {
+                "name": "Thomas Sayers",
+                "master": "Master's in marketing, University of Auckland (New Zealand)",
+                "bachelor": "Bachelor's in political science and international relations, University of Canterbury (New Zealand)",
+                "experience": "6 years of private tutoring experience, one-on-one English with international adult professionals"
             },
-            "aboutMembersDescriptions": {
-                "sophieDesc": " is a neuroscience specialist and scholarship student at the University of Toronto (Canada). She has six years of English and science tutoring experience for IGCSE and IB students. Her experience includes teaching English one-on-one, in small groups, and in classes of up to 40 students. She studied at an international school in Macau and graduated with an IB diploma. ",
-                "sashaDesc": " is completing her psychology specialist degree and education degree at the University of Toronto (Canada). She has over six years of teaching experiences ranging from private tutoring to classroom teaching from the kindergarten level up to the university level in multiple countries, such as China, Japan, and Canada. She previously attended public and private schools in mainland China and Macau. She graduated top of her class with an IB diploma.",
-                "xavierDesc": " is a Chemistry major at the Hong Kong University of Science and Technology. A native English speaker, he has over 6 years of experience working with English second language students. He attended an international school, graduating top of the class with an IB diploma. He has worked closely with the undergraduate recruitment team as a senior student ambassador, giving university integration talks to prospective students. He is focusing on language development coaching for non-native language learners and is currently learning two foreign languages.",
-                "miaDesc": " is studying towards a bachelor’s degree in English and Secondary Education at the University of Guam (USA). A native English speaker, she has been tutoring students from Macau and Guam across a range of levels for the past five years. She attended an international school in Macau and graduated with an IB diploma. Mia is passionate about writing and is also pursuing a minor in this field. She is currently working on an anthology of short stories and screenplays with other writers in Guam."
+            "jay": {
+                "name": "Johnson Ng",
+                "master": "Master's in data science and artificial intelligence, Ecole Polytechnique (France)",
+                "bachelor": "Bachelor's in computer science, Nanyang Technological University (Singapore)",
+                "experience": "7 years of private tutoring experience in Maths, Physics, Chemistry, and English"
+            },
+            "sophie": {
+                "name": "Sophie Wagle",
+                "master": "",
+                "bachelor": "Bachelor in neuroscience, University of Toronto (Canada)",
+                "experience": "6 years of English and science tutoring experience for IGCSE and IB students; One-on-one, small groups, classes of up to 40 students"
+            },
+            "sasha": {
+                "name": "Sasha Arnett",
+                "master": "",
+                "bachelor": "Bachelor in psychology and education, University of Toronoto (Canada)",
+                "experience": "6 years of teaching experience: private tutoring, classroom teaching; kindergarten to university level; taught in China, Japan, Canada"
+            },
+            "xavier": {
+                "name": "Xavier Kong",
+                "master": "",
+                "bachelor": "Bachelor in chemistry, Kong Kong University of Science and Technology",
+                "experience": "6 years of experience with English as a second language students"
+            },
+            "mia": {
+                "name": "Mia Alvarez",
+                "master": "",
+                "bachelor": "Bachelor in English and secondary education, University of Guam (USA)",
+                "experience": "5 years of experience; students from Macau and Guam"
             }
         }
     },
     "aboutTeamHeaders": {
+        "aboutUs": "ABOUT US",
         "aboutFounders": "ABOUT THE FOUNDERS",
         "aboutMembers": "OUR TEAM"
     }
