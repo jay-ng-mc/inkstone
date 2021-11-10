@@ -2,6 +2,13 @@
 .about {
     background-color: $greyscale1;
     font-family: $standard-font;
+    display: flex;
+    flex-direction: column;
+    .aboutTeamDescription {
+        @include standardTextBlockTemplate();
+        max-width: 60vw;
+        align-self: center;
+    }
     .aboutTeamHeader {
         @include standardHeaderTemplate();
         padding-top: 4vw;
@@ -27,9 +34,14 @@
                     width: 100%;
                 }
                 .aboutTeamMemberDescription {
+                    width: 100%;
                     margin-top: 10px;
-                    text-align: justify;
+                    text-align: left;
                     font-weight: $standard-font-weight;
+                    line-height: 1;
+                    li {
+                        margin-bottom: 0.5em;
+                    }
                     .aboutTeamMemberDescriptionName {
                         font-weight: $extra-bold-font-weight;
                     }

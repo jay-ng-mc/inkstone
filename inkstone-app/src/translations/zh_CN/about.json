@@ -1,31 +1,47 @@
 {
     "aboutTeam": {
-        "aboutFounders": {
-            "aboutFoundersNames": {
-                "thomasName": "Thomas Sayers",
-                "jayName": "吴文颛"
-            },
-            "aboutFoundersDescriptions": {
-                "thomasDesc": "是奥克兰大学商学院的市场营销硕士生。他有六年的私人辅导经验，目前在与不同地区在职人员进行一对一的语言辅导课程。他曾为高中学生辅导IGCSE和IB英语。他在澳门联国学校毕业，获得了IB国际文凭。他在新西兰坎特伯雷大学主修国际关系和汉语，副修媒体与通讯，在2020年以一等荣誉毕业。",
-                "jayDesc": "是新加坡南洋理工大学的电脑科学毕业生。他以英语为母语，有七年的IGCSE和IB科目私人辅导经验。他在澳门联国学校以全级最优成绩毕业，获得了IB国际文凭。他的本科课程有部分在澳洲墨尔本大学完成，并曾在法国蒙佩利埃的一家科技创业公司工作。现在他在法国巴黎理工学院修读数据科学和人工智能（硕士）。"
-            }
-        },
+        "aboutUs": "我们的创始人和教师都是大学生。我们提供澳门最顶尖的英语语言辅导和补习课程，让你像英语母语者一般说话。我们的团队全部都是英语母语者，特别在一对一补习上有多年的教学经验。我们的国际教师都在澳门联国学校以IB文凭毕业。",
         "aboutMembers": {
-            "aboutMembersNames": {
-                "sophieName": "Sophie Wagle",
-                "sashaName": "Sasha Arnett",
-                "xavierName": "Xavier Kong",
-                "miaName": "Mia Alvarez"
+            "thomas": {
+                "name": "Thomas Sayers",
+                "master": "硕士：市场营销, 奥克兰大学 (新西兰)",
+                "bachelor": "本科：国际关系, 坎特伯雷大学 (新西兰)",
+                "experience": "六年的私人辅导经验；成人一对一的语言辅导，高中学生IGCSE和IB英语辅导"
             },
-            "aboutMembersDescriptions": {
-                "sophieDesc": "现在是加拿大多伦多大学神经科学专业的奖学金学生。她在IGCSE和IB领域有六年的英语及科学私人辅导经验。她的教学经验包括一对一、小组教学和大班教学。她在澳门联国学校以优异成绩毕业，获得了IB国际文凭。",
-                "sashaDesc": "是加拿大多伦多大学的心理学和教育学本科生。她累积了超过六年的私人辅导以及专业教学经验，并在中国，日本，加拿大等多个国家与各阶段的学生进行英语语言辅导和教育。她就读过国内与国外的公立和私立学校，并在高中以优异的成绩获得IB国际文凭。",
-                "xavierDesc": "是香港科技大学化学系学生。他有超过六年的英语第二语言辅导经验。他在澳门联国学校以最优成绩毕业，获得了IB国际文凭。他在大学作为学生大使与本科招生部密切合作，为新生提供大学融合咨讯。现在他专注于英语第二语言辅导工作并且在学习两门外语。",
-                "miaDesc": "是关岛大学（美国）的英语及中学教育本科生。她是英语母语人士。Mia 在澳门和关岛有五年的私人辅导经验。她在澳门联国学校获得了IB国际文凭。Mia 热爱写作，目前在大学副修英文写作并且在与关岛其他的作家在合作编写一本故事集。"
+            "jay": {
+                "name": "吴文颛",
+                "master": "碩士：數據科學及人工智能, Ecole Polytechnique (法国)",
+                "bachelor": "本科：電腦科學，南洋理工大学（新加坡）",
+                "experience": "七年的初中、高中、IGCSE和IB科目私人辅导经验"
+            },
+            "sophie": {
+                "name": "Sophie Wagle",
+                "master": "",
+                "bachelor": "本科：神经科学, 多伦多大学（加拿大）",
+                "experience": "六年的IGCSE和IB英语及科学私人辅导经验；一对一、小组教学和大班教学经验"
+            },
+            "sasha": {
+                "name": "Sasha Arnett",
+                "master": "",
+                "bachelor": "本科：心理学及教育学，多伦多大学（加拿大）",
+                "experience": "六年的私人辅导以及专业教学经验；在中国，日本，加拿大等多个国家与各阶段的学生进行英语语言辅导和教育"
+            },
+            "xavier": {
+                "name": "Xavier Kong",
+                "master": "",
+                "bachelor": "本科：化学，香港科技大学",
+                "experience": "六年的英语第二语言辅导经验"
+            },
+            "mia": {
+                "name": "Mia Alvarez",
+                "master": "",
+                "bachelor": "本科：英语及高中教育，关岛大学（美国）",
+                "experience": "五年的私人英语辅导经验；关岛及澳门"
             }
         }
     },
     "aboutTeamHeaders": {
+        "aboutUs": "关于我们",
         "aboutFounders": "关于创始人",
         "aboutMembers": "我们的团队"
     }
