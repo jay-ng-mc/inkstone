@@ -3,22 +3,26 @@ import './About.scss'
 export default function About() {
     const { t } = useTranslation(['about'])
 
+    function buildMemberTranslation(k: string) {
+        const preString = `aboutTeam.aboutMembers.${k}`
+        return ({
+            name: t(`${preString}.name`),
+            master: t(`${preString}.master`),
+            bachelor: t(`${preString}.bachelor`),
+            experience: t(`${preString}.experience`),
+            photoURL: `${k}.png`
+        })
+    }
     // all image names and translation label names must use these names as root words, e.g. thomas.png, thomasName, thomasDesc
     const teamFounders = ['thomas', 'jay'] 
     const teamMembers = ['sophie', 'sasha', 'xavier', 'mia']
-    const founders = teamFounders.map(f => ({
-        teamMemberPhotoURL: f + '.png',
-        teamMemberName: t('aboutTeam.aboutFounders.aboutFoundersNames.' + f + 'Name'),
-        teamMemberDescription: t('aboutTeam.aboutFounders.aboutFoundersDescriptions.' + f + 'Desc')
-    }))
-    const members = teamMembers.map(f => ({
-        teamMemberPhotoURL: f + '.png',
-        teamMemberName: t('aboutTeam.aboutMembers.aboutMembersNames.' + f + 'Name'),
-        teamMemberDescription: t('aboutTeam.aboutMembers.aboutMembersDescriptions.' + f + 'Desc')
-    }))
+    const founders = teamFounders.map(k => buildMemberTranslation(k))
+    const members = teamMembers.map(k => buildMemberTranslation(k))
 
     return (
         <div className="about">
+            <div className="aboutTeamHeader">{t('aboutTeamHeaders.aboutUs')}</div>
+            <div className="aboutTeamDescription">{t('aboutTeam.aboutUs')}</div>
             <div className="aboutTeamHeader">{t('aboutTeamHeaders.aboutFounders')}</div>
             <TeamMemberGrid teamMembers={founders}/>
             <div className="aboutTeamHeader">{t('aboutTeamHeaders.aboutMembers')}</div>
@@ -31,7 +35,7 @@ function TeamMemberGrid(props: TeamMemberGridProps) {
     return (
         <div className="aboutTeamMemberGrid">
             <div className="aboutTeamMemberPanel">
-                {props.teamMembers.map(teamMember => <TeamMemberBox key={teamMember.teamMemberName} {...teamMember}/>)}
+                {props.teamMembers.map(teamMember => <TeamMemberBox key={teamMember.name} {...teamMember}/>)}
             </div>
         </div>
     )
@@ -40,10 +44,15 @@ function TeamMemberGrid(props: TeamMemberGridProps) {
 function TeamMemberBox(props: TeamMemberBoxProps) {
     return (
         <div className="aboutTeamMemberBox">
-            <img className="aboutTeamMemberPhoto" alt={props.teamMemberName} src={require('../../images/about/' + props.teamMemberPhotoURL).default}/>
-            <span className="aboutTeamMemberDescription">
-                <span className="aboutTeamMemberDescriptionName">{props.teamMemberName}</span>{props.teamMemberDescription}
-            </span>
+            <img className="aboutTeamMemberPhoto" alt={props.name} src={require('../../images/about/' + props.photoURL).default}/>
+            <div className="aboutTeamMemberDescription">
+                <div className="aboutTeamMemberDescriptionName">{props.name}</div>
+                <ul>
+                    {props.master?<li>{props.master}</li>:null}
+                    <li>{props.bachelor}</li>
+                    <li>{props.experience}</li>
+                </ul>
+            </div>
         </div>
     )
 }
@@ -53,7 +62,9 @@ declare interface TeamMemberGridProps {
 }
 
 declare interface TeamMemberBoxProps {
-    teamMemberName: string,
-    teamMemberDescription: string,
-    teamMemberPhotoURL: string
+    name: string,
+    master: string,
+    bachelor: string,
+    experience: string,
+    photoURL: string
 }

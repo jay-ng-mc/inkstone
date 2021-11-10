@@ -1,12 +1,7 @@
 {
     "headerRouterLinks": {
-        "home": "Home",
         "about": "About Us",
-        "services": "Services"
-    },
-    "headerRouterServicesDropdownOptions": {
         "ielts-speaking": "IELTS Speaking",
-        "writing-service": "Writing Services",
-        "essay-clinic": "Essay Clinic"
+        "tutoring": "Tutoring"
     }
 }
