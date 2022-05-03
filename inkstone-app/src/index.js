@@ -1,5 +1,5 @@
 // Firebase App (the core Firebase SDK) is always required and must be listed first
-import firebase from "firebase/app";
+import { initializeApp } from "firebase/app";
 
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
@@ -20,7 +20,7 @@ const firebaseConfig = {
   measurementId: "G-8P2VFD0QS5"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,8 +1,10 @@
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  BrowserRouter as Router
 } from 'react-router-dom';
+import {
+  Route,
+  Routes
+} from 'react-router'
 
 import Placeholder from './pages/placeholder/Placeholder';
 import Home from './pages/home/Home'
@@ -23,18 +25,18 @@ export default function RouterPanel() {
       <Router>
         <HeaderWrapper/>
         <div className="mainPage">
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/enroll" component={Enroll}/>
-          <Route path="/ielts-speaking" component={IeltsSpeaking}/>
-          <Route path="/english-conversation" component={EnglishConversation}/>
-          <Route path="/tutoring" component={Tutoring}/>
-          <Route path="/group-sessions" component={GroupSessions}/>
-          {/* <Route path="/writing-service" component={Placeholder}/> */}
-          <Route path="/essay-clinic" component={EssayClinic}/>
-          <Route path="/about" component={About}/>
-          <Route component={Placeholder}/>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/enroll" element={<Enroll/>}/>
+          <Route path="/ielts-speaking" element={<IeltsSpeaking/>}/>
+          <Route path="/english-conversation" element={<EnglishConversation/>}/>
+          <Route path="/tutoring" element={<Tutoring/>}/>
+          <Route path="/group-sessions" element={<GroupSessions/>}/>
+          {/* <Route path="/writing-service" element={<Placeholder/>}/> */}
+          <Route path="/essay-clinic" element={<EssayClinic/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route element={<Placeholder/>}/>
+        </Routes>
         </div>
         <Footer/>
       </Router>
