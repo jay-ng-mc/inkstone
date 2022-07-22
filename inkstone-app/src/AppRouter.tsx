@@ -9,7 +9,6 @@ import {
 import Placeholder from './pages/placeholder/Placeholder';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Blog from './pages/blog/Blog'
 import HeaderWrapper from './components/header/HeaderWrapper'
 import Footer from './components/footer/Footer';
 import IeltsSpeaking from './pages/services/IeltsSpeaking';
