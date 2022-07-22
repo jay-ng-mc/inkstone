@@ -1,4 +1,3 @@
-import { stdout } from 'process'
 import { useTranslation } from 'react-i18next'
 import './About.scss'
 export default function About() {
