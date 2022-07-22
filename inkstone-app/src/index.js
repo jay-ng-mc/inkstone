@@ -14,7 +14,6 @@ const firebaseConfig = {
   apiKey: "AIzaSyBI_sib3MuwtZStKpDmTYfpq6-MT2-cP4Q",
   authDomain: "inkstone-site.firebaseapp.com",
   projectId: "inkstone-site",
-  storageBucket: "inkstone-site.appspot.com",
   messagingSenderId: "25767716073",
   appId: "1:25767716073:web:ab3299ff684827d6973c78",
   measurementId: "G-8P2VFD0QS5",
