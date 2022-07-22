@@ -23,7 +23,7 @@ function ServicesListItem(props: ServicesListItemProps) {
         <Link to={props.k}>
             <div className="servicesListItemBox">
                 <div className="servicesListItem">
-                    <img className="servicesListItemLogo" src={require("../../images/services/" + props.k + "Logo.svg").default} alt={props.k}/>
+                    <img className="servicesListItemLogo" src={require("../../images/services/" + props.k + "Logo.svg")} alt={props.k}/>
                     <div className="servicesListItemText">{props.t("servicesList.servicesListItems." + props.k)}</div>
                 </div>
             </div>

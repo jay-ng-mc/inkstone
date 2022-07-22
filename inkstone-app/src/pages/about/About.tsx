@@ -44,7 +44,7 @@ function TeamMemberGrid(props: TeamMemberGridProps) {
 function TeamMemberBox(props: TeamMemberBoxProps) {
     return (
         <div className="aboutTeamMemberBox">
-            <img className="aboutTeamMemberPhoto" alt={props.name} src={require('../../images/about/' + props.photoURL).default}/>
+            <img className="aboutTeamMemberPhoto" alt={props.name} src={require('../../images/about/' + props.photoURL)}/>
             <div className="aboutTeamMemberDescription">
                 <div className="aboutTeamMemberDescriptionName">{props.name}</div>
                 <ul>

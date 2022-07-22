@@ -9,6 +9,7 @@ import {
 import Placeholder from './pages/placeholder/Placeholder';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
+import Blog from './pages/blog/Blog'
 import HeaderWrapper from './components/header/HeaderWrapper'
 import Footer from './components/footer/Footer';
 import IeltsSpeaking from './pages/services/IeltsSpeaking';
@@ -35,6 +36,7 @@ export default function RouterPanel() {
           {/* <Route path="/writing-service" element={<Placeholder/>}/> */}
           <Route path="/essay-clinic" element={<EssayClinic/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/blog" element={<Blog/>}/>
           <Route element={<Placeholder/>}/>
         </Routes>
         </div>

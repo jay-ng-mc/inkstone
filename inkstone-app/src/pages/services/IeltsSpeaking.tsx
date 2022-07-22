@@ -10,7 +10,7 @@ export default function IeltsSpeaking() {
         <div className="ieltsSpeaking">
             {/* ielts speaking poster */}
             <img className="ieltsSpeakingPoster" 
-            src={require("../../images/services/ieltsSpeaking/ieltsSpeakingPoster.png").default} 
+            src={require("../../images/services/ieltsSpeaking/ieltsSpeakingPoster.png")} 
             alt="IELTS Speaking Course Poster"/>
             <SignUpButton t={t}/>
             
@@ -25,7 +25,7 @@ export default function IeltsSpeaking() {
             {curriculumImages.map(c => (
                 <img className="ieltsSpeakingCurriculumOverviewImage"
                 key={c}
-                src={require('../../images/services/ieltsSpeaking/' + c + '.png').default}
+                src={require('../../images/services/ieltsSpeaking/' + c + '.png')}
                 alt={c}/>
             ))}
             <SignUpButton t={t}/>
