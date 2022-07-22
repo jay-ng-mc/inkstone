@@ -36,7 +36,6 @@ export default function RouterPanel() {
           {/* <Route path="/writing-service" element={<Placeholder/>}/> */}
           <Route path="/essay-clinic" element={<EssayClinic/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/blog" element={<Blog/>}/>
           <Route element={<Placeholder/>}/>
         </Routes>
         </div>
