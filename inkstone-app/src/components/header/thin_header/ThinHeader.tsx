@@ -63,15 +63,20 @@ function RouterLinks() {
             <nav>
             <ul className="headerRouterLinksList">
                 <li>
+                    <Link to="/essay-clinic">
+                        {t('headerRouterLinks.essay-clinic')}
+                    </Link>
+                </li>
+                <li>
                     <Link to="/ielts-speaking">
                         {t('headerRouterLinks.ielts-speaking')}
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/tutoring">
                         {t('headerRouterLinks.tutoring')}
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/about">{t('headerRouterLinks.about')}</Link>
                 </li>

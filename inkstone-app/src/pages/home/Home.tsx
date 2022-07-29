@@ -97,7 +97,7 @@ function PromoContent(props: {t: TranslateFunc}) {
         const t = props.t
         return (
             <div className="homePagePromoContentSection">
-                <img className="homePagePromoContentSectionIcon" alt={props.k} src={require(`../../images/home/${props.k}.svg`).default}/>
+                <img className="homePagePromoContentSectionIcon" alt={props.k} src={require(`../../images/home/${props.k}.svg`)}/>
                 <div className="homePagePromoContentSectionHeader">
                     {t(`homePromoContent.${props.k}.header`)}
                 </div>

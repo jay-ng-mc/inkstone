@@ -4,36 +4,42 @@
         "aboutMembers": {
             "thomas": {
                 "name": "Thomas Sayers",
+                "profession": "",
                 "master": "硕士：市场营销, 奥克兰大学 (新西兰)",
                 "bachelor": "本科：国际关系, 坎特伯雷大学 (新西兰)",
                 "experience": "六年的私人辅导经验；成人一对一的语言辅导，高中学生IGCSE和IB英语辅导"
             },
             "jay": {
                 "name": "吴文颛",
+                "profession": "遥感和计算机视觉数据科学家",
                 "master": "碩士：數據科學及人工智能, Ecole Polytechnique (法国)",
                 "bachelor": "本科：電腦科學，南洋理工大学（新加坡）",
                 "experience": "七年的初中、高中、IGCSE和IB科目私人辅导经验"
             },
             "sophie": {
                 "name": "Sophie Wagle",
+                "profession": "",
                 "master": "",
                 "bachelor": "本科：神经科学, 多伦多大学（加拿大）",
                 "experience": "六年的IGCSE和IB英语及科学私人辅导经验；一对一、小组教学和大班教学经验"
             },
             "sasha": {
                 "name": "Sasha Arnett",
+                "profession": "",
                 "master": "",
                 "bachelor": "本科：心理学及教育学，多伦多大学（加拿大）",
                 "experience": "六年的私人辅导以及专业教学经验；在中国，日本，加拿大等多个国家与各阶段的学生进行英语语言辅导和教育"
             },
             "xavier": {
                 "name": "Xavier Kong",
+                "profession": "",
                 "master": "",
                 "bachelor": "本科：化学，香港科技大学",
                 "experience": "六年的英语第二语言辅导经验"
             },
             "mia": {
                 "name": "Mia Alvarez",
+                "profession": "",
                 "master": "",
                 "bachelor": "本科：英语及高中教育，关岛大学（美国）",
                 "experience": "五年的私人英语辅导经验；关岛及澳门"
