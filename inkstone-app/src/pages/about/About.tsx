@@ -5,13 +5,15 @@ export default function About() {
 
     function buildMemberTranslation(k: string) {
         const preString = `aboutTeam.aboutMembers.${k}`
-        return ({
+        const translation = {
             name: t(`${preString}.name`),
+            profession: t(`${preString}.profession`),
             master: t(`${preString}.master`),
             bachelor: t(`${preString}.bachelor`),
             experience: t(`${preString}.experience`),
             photoURL: `${k}.png`
-        })
+        }
+        return (translation)
     }
     // all image names and translation label names must use these names as root words, e.g. thomas.png, thomasName, thomasDesc
     const teamFounders = ['thomas', 'jay'] 
@@ -44,10 +46,11 @@ function TeamMemberGrid(props: TeamMemberGridProps) {
 function TeamMemberBox(props: TeamMemberBoxProps) {
     return (
         <div className="aboutTeamMemberBox">
-            <img className="aboutTeamMemberPhoto" alt={props.name} src={require('../../images/about/' + props.photoURL).default}/>
+            <img className="aboutTeamMemberPhoto" alt={props.name} src={require('../../images/about/' + props.photoURL)}/>
             <div className="aboutTeamMemberDescription">
                 <div className="aboutTeamMemberDescriptionName">{props.name}</div>
                 <ul>
+                    {props.profession?<li>{props.profession}</li>:null}
                     {props.master?<li>{props.master}</li>:null}
                     <li>{props.bachelor}</li>
                     <li>{props.experience}</li>
@@ -63,6 +66,7 @@ declare interface TeamMemberGridProps {
 
 declare interface TeamMemberBoxProps {
     name: string,
+    profession: string,
     master: string,
     bachelor: string,
     experience: string,

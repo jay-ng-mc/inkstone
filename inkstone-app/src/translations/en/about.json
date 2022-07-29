@@ -4,36 +4,42 @@
         "aboutMembers": {
             "thomas": {
                 "name": "Thomas Sayers",
+                "profession": "",
                 "master": "Master's in marketing, University of Auckland (New Zealand)",
                 "bachelor": "Bachelor's in political science and international relations, University of Canterbury (New Zealand)",
                 "experience": "6 years of private tutoring experience, one-on-one English with international adult professionals"
             },
             "jay": {
                 "name": "Johnson Ng",
+                "profession": "Data scientist in remote sensing and computer vision",
                 "master": "Master's in data science and artificial intelligence, Ecole Polytechnique (France)",
                 "bachelor": "Bachelor's in computer science, Nanyang Technological University (Singapore)",
                 "experience": "7 years of private tutoring experience in Maths, Physics, Chemistry, and English"
             },
             "sophie": {
                 "name": "Sophie Wagle",
+                "profession": "",
                 "master": "",
                 "bachelor": "Bachelor in neuroscience, University of Toronto (Canada)",
                 "experience": "6 years of English and science tutoring experience for IGCSE and IB students; One-on-one, small groups, classes of up to 40 students"
             },
             "sasha": {
                 "name": "Sasha Arnett",
+                "profession": "",
                 "master": "",
                 "bachelor": "Bachelor in psychology and education, University of Toronoto (Canada)",
                 "experience": "6 years of teaching experience: private tutoring, classroom teaching; kindergarten to university level; taught in China, Japan, Canada"
             },
             "xavier": {
                 "name": "Xavier Kong",
+                "profession": "",
                 "master": "",
                 "bachelor": "Bachelor in chemistry, Kong Kong University of Science and Technology",
                 "experience": "6 years of experience with English as a second language students"
             },
             "mia": {
                 "name": "Mia Alvarez",
+                "profession": "",
                 "master": "",
                 "bachelor": "Bachelor in English and secondary education, University of Guam (USA)",
                 "experience": "5 years of experience; students from Macau and Guam"

@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 
 import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import './i18n.js';
@@ -14,21 +14,23 @@ const firebaseConfig = {
   apiKey: "AIzaSyBI_sib3MuwtZStKpDmTYfpq6-MT2-cP4Q",
   authDomain: "inkstone-site.firebaseapp.com",
   projectId: "inkstone-site",
-  storageBucket: "inkstone-site.appspot.com",
   messagingSenderId: "25767716073",
   appId: "1:25767716073:web:ab3299ff684827d6973c78",
-  measurementId: "G-8P2VFD0QS5"
+  measurementId: "G-8P2VFD0QS5",
+  storageBucket: "gs://inkstone-site.appspot.com"
 };
 // Initialize Firebase
 initializeApp(firebaseConfig);
 
-ReactDOM.render(
+
+ReactDOM.createRoot(
+  document.getElementById("root")
+).render(
   <React.StrictMode>
     <Suspense fallback="Loading...">
       <RouterPanel/>
     </Suspense>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
